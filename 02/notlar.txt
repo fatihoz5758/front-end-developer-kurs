@@ -1,0 +1,19 @@
+1.tag
+2.attribute (a (tag) href (attribute))
+3. google de arama yapılınca ilk önce ana başlığa bakılıyor
+4.h1 .... heading
+5. style="color: red;"
+
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text(teknik terimler vb.)
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text
+yorum satırı (ctrl + k + c)
+yorum satırını normale çevirme (ctrl + k + u)
+<!-- -->

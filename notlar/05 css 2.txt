@@ -1,0 +1,39 @@
+Margin
+
+iki eleman arası margin verirken, birimleri toplamaz, büyük olana göre hareket eder.
+
+
+tek tek margin ve padding verebiliyoruz;
+ #alt{
+    margin-top: 120px;
+    margin-left: 0;
+    margin-right: 100px;
+    padding-left: 0;
+    padding-bottom: 100px;
+}
+
+shorthand margin: margin kısayolu
+margin-top
+margin-right
+margin-bottom
+margin-left
+margin: 20px 30px 50px 5px (yukarı, sağa, aşağı, sola)
+margin: 100px 50px;(dikey, yatay)
+
+
+height and width
+
+width: 200px;
+height:200px;
+
+max-width:300px;
+max-height:300px;
+
+min-width:300px;
+min-height:300px;
+
+
+snake_case => (underscore) => alinin_evraki.html---- margin_examples.html
+margin_ex.html
+
+pascalCase => alininEvraki.html------- marginExamples.html

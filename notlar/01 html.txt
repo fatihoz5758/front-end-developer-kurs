@@ -1,0 +1,95 @@
+CSS
+
+selector
+
+body{
+    ...
+    }
+
+p{
+    color:red;
+}
+
+p,h1{
+    font-size:20px;
+}
+
+
+farklı yöntemlerle css verilebilir
+=>  class yapıları için     .div1{...}
+=>  id yapıları için     #righth2{...}
+
+
+*{...}     universal selector
+
+Internal CSS. ----- tek bir sayfada kullanacaksak mantıklı
+Inline CSS.    ------tek etiket için kullacağımız css, diğerlerini ezer
+External CSS.  ----birçok sayfada kullanmak istiyorsak
+
+birçok css i tek dosyaya verebiliriz
+
+farklı css lerden tek bir elamana css kodu gelirse, yani çakışma olursa
+
+external<internal<inline,  (kodun ezilmesi oluyor)
+
+
+
+HTML
+Yorum satırları
+<!-- Burası yorum satırı -->
+
+vs code => ctrl +k +c veya ctrl + ö
+vs code yorumu açmak için ctrl +k +u
+
+
+CSS yorum satırları
+
+/* Burası yorum satırı */
+
+
+
+ background-image: url("/small.jpg");
+        background-repeat: repeat;
+
+
+        background-repeat: no-repeat;
+
+
+        background-repeat: repeat-x;
+        background-repeat: no-repeat-y;
+
+
+
+
+
+CSS Borders
+
+.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+
+
+
+
+p {
+  border: 5px solid red;
+}
+
+
+
+#red{
+        height: 80px;
+        width: 200px;
+        background-color:lightpink;
+        text-align: center;
+        border: 5px double black;
+        border-radius: 200px;
+        }

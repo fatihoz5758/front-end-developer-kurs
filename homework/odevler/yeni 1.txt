@@ -1,0 +1,24 @@
+
+fatih oz <fatihozigu@gmail.com>
+23:11 (3 dakika önce)
+Alıcı: ben
+
+TASK 1: 
+1 - masa üstündeki webDev klasörünün içerisine web_apps adında bir klasör oluşturalım 
+2 - içerisine de app01 adında yeni bir klasör oluşturalım (webDev/web_apps/app01) klasörünü oluşturalım 
+3 - index.html adında bir dosya açarak ierisine HTML5 standartlarına uygun bir bir HTML çerçevesi kuralım. (HTML5 e uygun şekilde html-head-body etiketlerimizi açalım) 
+4 - Browserda sekme başlığımızı "...'in Web Sayfası" olarak kendi adımız olarak ayarlayalım 
+5 - Sayfamıza bir adet büyük başlık, en az iki küçük başlık ve başlıkların altında en az birer paragraf olacak şekilde içeriklerimizi ekleyelim 
+6- Büyük başlığa kırmızı, küçük başlıklara mavi, paragraflara ise siyah renk verelim 
+ 
+ 
+ekranı ikiye bölerek çalışalım 
+ 
+ 
+TASK 2: 
+1 - masa üstündeki webDev klasörünün içerisine web_apps adında bir klasör oluşturalım 
+2 - içerisine de app02 adında yeni bir klasör oluşturalım 
+Aşağıdaki resimdeki web sitesini klasörümüzün içerisine index.html dosyası açarak HTML kodları ile yazınız 
+https://drive.google.com/file/d/1kE72oaivOhdrw5qhzcX_GY_Kc14yQeFN/view?usp=sharing 
+ 
+ekranı ikiye bölerek çalışalım

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+
+</head>
+
+<body>
+    <h1 class="font-effect-fire"  style="font-family: 'Sofia', sans-serif; text-align:center; font-size: 50px;">Yazı Tipi Konu Devamı</h1>
+    <p style="font-family: 'Indie Flower', cursive;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio iste
+        asperiores illo repudiandae nihil eos
+        perferendis at, possimus quibusdam assumenda repellendus non itaque beatae quae fuga distinctio ipsam sequi quos
+        facere soluta optio, ex ipsum mollitia laborum? Aspernatur magni nesciunt laudantium. Illo voluptatum minus,
+        iste exercitationem veniam magnam mollitia corporis?</p>
+    <p style="font-family: 'Lato', sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel praesentium dicta ea nemo unde a facere excepturi
+        cumque quae enim fugit ducimus recusandae tempora quo, necessitatibus sunt architecto? In, corporis.</p>
+
+</body>
+
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple">
+
+</head>
+
+<body>
+    <h1 class="font-effect-shadow-multiple"  style="font-family: Rancho; text-align:center; font-size: 50px;">Yazı Tipi Konu Devamı</h1>
+    <p style="font-family: 'Indie Flower', cursive;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio iste
+        asperiores illo repudiandae nihil eos
+        perferendis at, possimus quibusdam assumenda repellendus non itaque beatae quae fuga distinctio ipsam sequi quos
+        facere soluta optio, ex ipsum mollitia laborum? Aspernatur magni nesciunt laudantium. Illo voluptatum minus,
+        iste exercitationem veniam magnam mollitia corporis?</p>
+    <p style="font-family: 'Lato', sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel praesentium dicta ea nemo unde a facere excepturi
+        cumque quae enim fugit ducimus recusandae tempora quo, necessitatibus sunt architecto? In, corporis.</p>
+
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation">
+
+</head>
+
+<body>
+    <h1 class="font-effect-fire-animation"  style="font-family: Rancho; text-align:center; font-size: 50px;">Yazı Tipi Konu Devamı</h1>
+    <p style="font-family: 'Indie Flower', cursive;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio iste
+        asperiores illo repudiandae nihil eos
+        perferendis at, possimus quibusdam assumenda repellendus non itaque beatae quae fuga distinctio ipsam sequi quos
+        facere soluta optio, ex ipsum mollitia laborum? Aspernatur magni nesciunt laudantium. Illo voluptatum minus,
+        iste exercitationem veniam magnam mollitia corporis?</p>
+    <p style="font-family: 'Lato', sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel praesentium dicta ea nemo unde a facere excepturi
+        cumque quae enim fugit ducimus recusandae tempora quo, necessitatibus sunt architecto? In, corporis.</p>
+
+</body>
+
+</html>
+
+
+
+
+
+google fonts;
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation">
+    
+
+
+google icons:
+        <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+
+Link
+    a:link{
+        font-size: 30px;
+        color:red
+    }
+    a:visited{
+        font-size: 30px;
+        color:yellow
+    }
+    a:hover{
+        font-size: 30px;
+        color:darkmagenta
+    }
+    a:active{
+        font-size: 30px;
+        color:aqua
+    }
+
+
+
+
+    a:link{
+        font-size: 30px;
+        color:red;
+        text-decoration: none;
+        background-color: yellow;
+    }
+    a:visited{
+        font-size: 30px;
+        color:yellow;
+        text-decoration: none;
+        background-color: red;
+
+    }
+    a:hover{
+        font-size: 30px;
+        color:red;
+        text-decoration: none;
+        background-color: yellow;
+    }
+    a:active{
+        font-size: 30px;
+        color:aqua;
+        text-decoration: none;
+    }
+
+
+
+<span style="cursor: auto">auto</span><br>
+<span style="cursor: crosshair">crosshair</span><br>
+<span style="cursor: default">default</span><br>
+<span style="cursor: e-resize">e-resize</span><br>
+<span style="cursor: help">help</span><br>
+<span style="cursor: move">move</span><br>
+<span style="cursor: n-resize">n-resize</span><br>
+<span style="cursor: ne-resize">ne-resize</span><br>
+<span style="cursor: nw-resize">nw-resize</span><br>
+<span style="cursor: pointer">pointer</span><br>
+<span style="cursor: progress">progress</span><br>
+<span style="cursor: s-resize">s-resize</span><br>
+<span style="cursor: se-resize">se-resize</span><br>
+<span style="cursor: sw-resize">sw-resize</span><br>
+<span style="cursor: text">text</span><br>
+<span style="cursor: w-resize">w-resize</span><br>
+<span style="cursor: wait">wait</span>
+
+
+
+lists
+
+    ordered
+    unordered
+
+
+
+

@@ -1,0 +1,104 @@
+
+https://github.com/
+
+herkes git kurulumlarını tamamlamış olsun
+
+
+
+outline;
+
+    dotted - Defines a dotted outline
+    dashed - Defines a dashed outline
+    solid - Defines a solid outline
+    double - Defines a double outline
+    groove - Defines a 3D grooved outline
+    ridge - Defines a 3D ridged outline
+    inset - Defines a 3D inset outline
+    outset - Defines a 3D outset outline
+    none - Defines no outline
+    hidden - Defines a hidden outline
+
+
+    h1{
+            text-align: center;
+            border: 3px solid red;
+            color: lightblue;
+            outline: 5px ridge lightcoral;
+            outline-offset: 10px;
+        }
+    /* h1{
+        text-align: center;
+        border: 3px solid red;
+        color: lightblue;
+        outline-color: green;
+        outline-width: 5px;
+        outline-style: groove;
+    }*/
+
+Texts;
+
+Arka planla contrast oluşturmalıyız
+Tab ekleme yöntemleri:
+    1- <span style="display: inline-block; width:30px"></span>
+    2- &emsp;  veya   &nbsp;
+    3- text-indent: 30px;
+
+sağdan sola için : 
+    direction: rtl;
+    unicode-bidi: bidi-override;
+
+
+text-decoration: line-through;
+text-decoration: underline;
+text-decoration: none;
+
+text transformation
+    text-transform: lowercase;
+    text-transform: uppercase;
+    text-transform: capitalize;
+
+text-spacing
+    line-height: 40px;
+    word-spacing: 30px;
+    text-indent: 30px;
+    white-space: break-spaces;
+    text-shadow: 5px 5px 5px lightgrey;
+
+    h1 {
+    text-shadow: 0 0 3px #FF0000;
+    }
+
+    h1 {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+
+
+
+Yazı Tipler =>
+
+    SERIF, SANS SERIF, MONOSPACE
+
+    font-family; 
+    style="font-family: Arial sans-serif; font-size:30px;"
+
+
+    Web Safe Fonts
+    Arial (sans-serif)
+    Verdana (sans-serif)
+    Tahoma (sans-serif)
+    Trebuchet MS (sans-serif)
+    Times New Roman (serif)
+    Georgia (serif)
+    Garamond (serif)
+    Courier New (monospace)
+    Brush Script MT (cursive)
+
+
+    font-size:30px;
+
+    vw => viewport width   %percent (yüzde) => 1vw ekranın genişliğinin yüzde 1 ölçüsünde
+
+    /*font-size: 150%;*/
+        /*font-size: 1.2em;*/
+        font-size: 5vw;

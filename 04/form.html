@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Ödevi</title>
+</head>
+
+<body>
+    <h1>Lütfen formu doldurup kaydet tuşuna basınız</h1>
+    <h2>Kişisel Bilgiler</h2>
+    <form action="">
+        <label for="kullaniciadi">Kullanıcı Adı :</label>
+        <input type="text" name="kullaniciadi" id="kullaniciadi" placeholder="Lütfen Kullanıcı adı giriniz:"><br><br>
+        <label for="email">Email :</label>
+        <input type="email" name="email" id="email" placeholder="Lütfen email girin:"><br><br>
+        <label for="pass">Şifre :</label>
+        <input type="password" name="pass" id="pass" placeholder="Lütfen şifre girin:">
+        <h2>Şahsi Bilgiler</h2>
+        <label for="isim">İsim :</label>
+        <input type="text" name="isim" id="isim"><br><br>
+        <label for="soyisim">Soyisim :</label>
+        <input type="text" name="soyisim" id="soyisim"><br><br>
+        <label for="cities">Şehir :</label>
+        <select name="cities" id="cities">
+            <option value="">Seçiniz</option>
+            <option value="İstanbul">İstanbul</option>
+            <option value="Ankara">Ankara</option>
+            <option value="Sivas">Sivas</option>
+            <option value="Bursa">Bursa</option>
+        </select><br><br>
+        <p style="display: inline; ">Cinsiyet :</p>
+        <input type="radio" id="erkek" name="cinsiyet">
+        <label for="cinsiyet">Erkek</label>
+        <input type="radio" id="kadin" name="cinsiyet">
+        <label for="cinsiyet">Kadın</label><br><br>
+        <p style="display: inline; ">Yazılım Geçmişi : </p>
+        <input type="checkbox" id="yok" name="yok">
+        <label for="yok">Yok</label>
+        <input type="checkbox" id="az" name="az">
+        <label for="az">Az</label>
+        <input type="checkbox" id="yaz.dil.bil" name="yaz.dil.bil">
+        <label for="yaz.dil.bil">Yazılım Dili Biliyor</label>
+        <input type="checkbox" id="wordpress" name="wordpress">
+        <label for="wordpress">WordPress</label><br><br>
+        <textarea name="msg" id="msg" cols="50" rows="10">
+            yazınızı buraya yazınız 
+         </textarea> <br>
+        <input type="submit" value="Kaydet">
+
+
+
+
+
+
+
+    </form>
+</body>
+
+</html>

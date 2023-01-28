@@ -1,0 +1,48 @@
+Gökhan:
+Şu ana kadarki derslerimizin html dosyalarını aşağıdaki linkten indirebilirsiniz:
+https://drive.google.com/file/d/1v5tJEarI_kB_tWCUGW-bFUt5158rIxkd/view?usp=sharing
+
+Task 1:
+1 - masa üstündeki webDev klasörünün içerisine web_apps adında bir klasör oluşturalım 
+2 - içerisine de app03 adında yeni bir klasör oluşturalım (webDev/web_apps/app03) klasörünü oluşturalım 
+ 
+resimdeki web sitesini HTML kodları ile yazınız 
+https://drive.google.com/file/d/1MJdbYu1zu7qL8w0Hgxp1HgBccfMuETVq/view?usp=sharing
+
+Task2 
+1 - masa üstündeki webDev klasörünün içerisine web_apps adında bir klasör oluşturalım 
+2 - içerisine de app04 adında yeni bir klasör oluşturalım (webDev/web_apps/app04) klasörünü oluşturalım 
+ 
+resimdeki web sitesini HTML kodları ile yazınız 
+ 
+https://drive.google.com/file/d/1X5k9tYzeSoBTGP327VfOOtE8BLKFGMdu/view?usp=sharing 
+ 
+ekranı ikiye bölerek çalışalım
+
+Task 3:
+1 - masa üstündeki webDev klasörünün içerisine web_apps adında bir klasör oluşturalım 
+2 - içerisine de app05 adında yeni bir klasör oluşturalım (webDev/web_apps/app05) klasörünü oluşturalım 
+ 
+https://drive.google.com/file/d/1042wYQtAYW6qETPuHQSKBgxN411bVrPA/view?usp=sharing 
+ 
+resimdeki web sayfasını HTML kodları ile yazınız 
+ 
+ilgili imaj linklerini aşağıda bulabilirsiniz 
+ 
+ 
+https://restcountries.com/ 
+ 
+https://restcountries.com/v3.1/name/turkey 
+https://flagcdn.com/w320/tr.png 
+ 
+https://restcountries.com/v3.1/name/germany 
+https://flagcdn.com/w320/de.png 
+ 
+https://restcountries.com/v3.1/name/belgium 
+https://flagcdn.com/w320/be.png 
+ 
+https://restcountries.com/v3.1/name/france 
+https://flagcdn.com/w320/fr.png 
+ 
+ 
+ekranı ikiye bölerek çalışalım

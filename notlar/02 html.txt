@@ -1,0 +1,286 @@
+
+GEÇEN DERS TASKLER:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gökhan'ın Web Sayfası</title>
+</head>
+<body>
+    <h1 style="color:red">Merhaba, Web Sayfama Hoş Geldiniz</h1>
+    <p style="color:black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis corrupti ratione quisquam illum cumque nam quam autem a quasi, aspernatur beatae ipsa magnam sunt dicta possimus modi nesciunt non aut?</p>
+    <h2 style="color:blue">Web Geliştirme Çok Zevkli </h2>
+    <p style="color:black">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque ad voluptatum blanditiis cupiditate velit, natus, cumque quae, dolor corporis non hic eveniet qui! Eaque temporibus molestias saepe deserunt, sequi dolore?</p>
+    <h3 style="color:blue">Kendimizi geliştirmekten vazgeçmeyelim</h3>
+    <p style="color:black">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, corrupti. Officia ab velit minus asperiores beatae ad pariatur consequatur optio?</p>
+</body>
+</html>
+
+
+
+---------
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Akademie Web Sayfası</title>
+</head>
+<body>
+    
+    <h1 style="color:red">
+        Blue Akademi Web Development Kursu
+    </h1>
+    <h2 style="color:blue">
+        HTML ile Web Geliştirmenin Temelleri
+    </h2>
+    <hr>
+    
+    <h3 style="color:orange">Kurs içeriği</h3>
+    <p>
+        Bu kurs <b>temel HTML bilgisini öğretmeyi amaçlıyor.</b> 
+        Bütün HTML tagları örneklerle anlatılarak, web geliştirmeye sağlam bir <mark>başlangıç yapılıyor.</mark>
+    </p>
+    
+    <h3 style="color:orange">Kurs Mekanı</h3>
+    <p>
+        Tamamen dijital ortamda, <strong>evinizin rahatlığında, </strong> en güncel içeriklerle <i>kendinizi gelitirip,</i> web geliştirme öğrenin.
+    </p>
+
+    <h3 style="color:orange">Kurs Hakkında</h3>
+    <p>
+        Haydi geleceğin dünyasında yermizi alalım, <u>en güncel</u> , <ins>örneklendirilmiş</ins> Html müfredatımızı <u><strong>Blue Akademie</strong></u> ile keşfedip yepyeni dünyalara yelken açın.
+    </p>
+
+</body>
+</html>
+
+-------
+
+
+HTML links
+ <a> etiketi
+
+ linkler için target attribute - _blank, _parent, _top, _self
+
+
+wrapping   => sarmalamak
+
+---------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{
+            color:red;
+            text-decoration:none;
+        }
+        a:visited{
+            color:green;
+            text-decoration:none;
+        }
+        a:hover{
+            color:blue;
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.coursera.org/" target="_blank">
+        Kurs sayfasına git
+    </a>
+</body>
+</html>
+
+------------------
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{
+            color:white;
+            text-decoration:none;
+            background-color: cornflowerblue;
+            padding: 10px 20px;
+            margin: 50px;
+            margin-top: 50px;
+            display: inline-block;
+        }
+        a:visited{
+            color:white;
+            text-decoration:none;
+            background-color: cornflowerblue;
+            padding: 10px 20px;
+            margin: 50px;
+            margin-top: 50px;
+            display: inline-block;
+        }
+        a:hover{
+            color:red;
+            text-decoration:none;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.coursera.org/" target="_blank">
+        Kurs sayfasına git
+    </a>
+</body>
+</html>
+
+-------- sayfa içi linkleme
+links.html
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+
+    <a href="#k1"> 1 nolu konuya  git</a>
+    <a href="#k2"> 2 nolu konuya  git</a>
+    <a href="#k3"> 3 nolu konuya  git</a>
+    <a href="#k4"> 4 nolu konuya  git</a>
+
+    <h2 id="k1">Konu Başlığı 1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed similique laborum deleniti vitae rerum asperiores
+        fuga dolorem officia deserunt perferendis unde possimus, culpa aliquid ipsum veniam soluta eaque vero a earum.
+ rum, in labore cum, suscipit illum, a sequi autem id pariatur! Vel perspiciatis iusto
+    perferendis nemo incidunt ullam nobis vitae dolorum aspernatur repudiandae fugit
+        asperiores! Recusandae at magni fugiat placeat, assumenda facere aut magnam. Illum, earum.</p>
+    <h2 id="k2">Konu Başlığı 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed similique laborum deleniti vitae rerum asperiores
+        fuga dolorem officia deserunt perferendis unde possimus, culpa aliquid ipsum veniam soluta eaque vero a earum.
+ rferendis nemo incidunt ullam nobis vitae dolorum aspernatur repudiandae fugit
+        asperiores! Recusandae at magni fugiat placeat, assumenda facere aut magnam. Illum, earum.</p>
+    <h2 id="k3">Konu Başlığı 3</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed similique laborum deleniti vitae rerum asperiores
+        fuga dolorem officia deserunt perferendis unde possimus, culpa aliquid ipsum veniam soluta eaque vero a earum.
+ sequuntur repudiandae mollitia sunt, excepturi saepe quisquam. Nam ipsa molestias iste
+        ratione quaerat, vero eos perferendis nemo incidunt ullam nobis vitae dolorum aspernatur repudiandae fugit
+        asperiores! Recusandae at magni fugiat placeat, assumenda facere aut magnam. Illum, earum.</p>
+    <h2 id="k4">Konu Başlığı 4</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed similique laborum deleniti vitae rerum asperiores
+        fuga dolorem officia deserunt perferendis unde possimus, culpa aliquid ipsum veniam soluta eaque vero a earum.
+i fugiat placeat, assumenda facere aut magnam. Illum, earum.</p>
+
+
+</body>
+
+</html>
+
+
+------------------------------
+
+links2.html
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="links.html#k4">Links Sayfasındaki 4. konu başlığına git</a>
+</body>
+</html>
+
+
+
+-------
+
+
+<img> tag için
+
+Abbreviation        File Format        File Extension
+APNG        Animated Portable Network Graphics        .apng
+GIF            Graphics Interchange Format        .gif
+ICO            Microsoft Icon        .ico, .cur
+JPEG        Joint Photographic Expert Group image        .jpg, .jpeg, .jfif, .pjpeg, .pjp
+PNG            Portable Network Graphics        .png
+SVG            Scalable Vector Graphics        .svg
+
+
+
+HTML Image Map
+
+https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_map2
+https://www.w3schools.com/html/html_images_imagemap.asp
+
+
+
+FavIcon
+head tagına aşğıdaki etiketi ekleyin
+<link rel="icon" type="image/x-icon" href="/03/favicon.ico">
+
+https://www.favicon.cc/
+
+
+Html Lists
+    unordered List  <ul>   (kuralsız listeler)
+        liste elemanları <li>
+        style="list-style-type: circle;">
+        float:left  
+
+    ordered list    <ol>    (kurallı listeler)
+         liste elemanları <li>
+         type="1", type="A", type="a", type="I", type="i"
+
+    İçiçe listeler(Nested List)
+
+    DescriptionLists
+    https://www.w3schools.com/html/html_lists_other.asp
+
+
+HTML Tables
+tablolara her türlü tag koyabiliriz
+    text, img, list, a(link), table
+
+    Row <tr> (table row)
+
+
+
+    Column <th>  (table header)   <td>  (table data) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

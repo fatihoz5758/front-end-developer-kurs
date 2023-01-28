@@ -1,0 +1,53 @@
+body {
+    background-color: lightpink;
+    color: darkslategray;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    padding: 0px 30px;
+    /* dikey ve yatay */
+    background-color: chartreuse;
+
+}
+
+.p2 {
+    text-align: justify;
+    text-indent: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    padding-left: 30px;
+}
+
+span {
+    text-decoration: underline red 5px;
+    /* text-decoration-color: blue; 
+    text-decoretion: 5px*/
+
+}
+
+#transfor {
+    background-color: lightpink;
+    text-transform: lowercase;
+    text-transform: uppercase;
+    text-transform: capitalize;
+    letter-spacing: 10px; /*harfler arası boşluk*/
+    line-height: 40px; /*Satırlar arası boşluk*/
+    word-spacing: 10px; /*kelimeler arası boşluk*/
+    text-indent: 30px; /*parargaf başı*/
+    /* white-space: break-spaces; (boşlukları gösterir( */
+    text-shadow: 5px -5px 3px red ;
+    color: blue;
+}
+#ftr{
+    color: white;
+    text-shadow: -1px 3px 5px black;
+    font-size: 40px;
+    text-align: center;
+}
