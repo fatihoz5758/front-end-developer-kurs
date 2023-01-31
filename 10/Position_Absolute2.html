@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position_Absolute</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            display: inline-block;
+        }
+#box3{
+    position: relative;
+    top: 300px;
+    right: 100px;
+}
+        #inner_box{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: aqua;
+            top: 20px;
+            left: 200px;
+        }
+        .inner{
+            width: 20px;
+            height: 20px;
+            background-color: red;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div id="box1" class="box">kutu</div>
+    <div id="box2" class="box">kutu</div>
+    <div id="box3" class="box"> Ab. kutu
+        <div id="inner_box"></div>
+        <div class="inner"></div>
+        <div class="inner"></div>
+    </div>
+    <div id="box4" class="box">kutu</div>
+</body>
+</html>
