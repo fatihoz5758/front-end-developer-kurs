@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display None</title>
+    <style>
+        img {
+            width: 50px;
+        }
+
+        .box {
+            width: 80%;
+            border: 1px solid blue;
+            margin: 20px;
+        }
+        #container{
+            text-align: center;
+            border: 2px solid red;
+            width: 40%;
+            min-width: 300px;
+        }
+    </style>
+    <script>
+        function sil(){
+            document.getElementById('box1').style.display='none';
+        }
+        function gizle(){
+            document.getElementById('box2').style.visibility='hidden';
+        }
+        function reset(){
+            document.getElementById('box1').style.display='block';
+            document.getElementById('box2').style.visibility='visible';
+            document.getElementById('box3').style.display='block';
+            document.getElementById('box4').style.visibility='visible';
+
+        }
+        function bir(){
+            document.getElementById('box3').style.display='none';
+        }
+        function dix(){
+            document.getElementById('box4').style.visibility='hidden';
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1 style="text-align: center;">Display None</h1>
+    <div id="container">
+
+
+        <div class="box" id="box1">
+            <p>display:none</p>
+            <img  src="roma.gif" alt="Roma">
+            <p><button onclick="sil()">Sil</button></p>
+        </div>
+        <div class="box" id="box2">
+            <p>visibility:hidden</p>
+            <img  src="roma.gif" alt="Roma">
+            <p><button onclick="gizle()">Gizle</button></p>
+
+        </div>
+        <div class="box">
+            <p>reset</p>
+            <img  src="roma.gif" alt="Roma">
+            <p><button onclick="reset()">Resetle</button></p>
+
+        </div>
+        <div class="box" id="box3">
+            <p>sil</p>
+            <img  src="roma.gif" alt="Roma">
+            <p><button onclick="bir()">Bir</button></p>
+
+        </div>
+        <div class="box" id="box4">
+            <p>dix</p>
+            <img  src="roma.gif" alt="Roma">
+            <p><button onclick="dix()">Dix</button></p>
+            
+        </div>
+    </div>
+</body>
+
+</html>
