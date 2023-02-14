@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Başlangıç</title>
+    <style>
+        button{
+            margin: 5px;
+        }
+    </style>
+    <script>
+        function yeni_fonksiyon(){
+            document.getElementById('bir').style.color = 'red';
+            document.getElementById('iki').style.color = 'red';
+            document.getElementById('bir').style.fontSize ='25px';
+            document.getElementById('iki').style.textAlign ='center';
+            document.getElementById('bir').style.textAlign ='center';
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="baslik">JS Başlangıç</h1>
+
+    <p id="deneme">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, deserunt!</p>
+
+<button type="button" onclick=" document.getElementById('deneme').style.color = 'red' ">Rengini Değiştir</button><br>
+<button type="button" onclick=" document.getElementById('deneme').style.display = 'none' ">Elemanı gizle</button><br>
+<button type="button" onclick=" document.getElementById('deneme').style.fontSize ='25px' ">Font Büyüt</button><br>
+<button type="button" onclick=" document.getElementById('deneme').style.display = 'block' ">Elemanı göster</button><br>
+<button type="button" onclick=" document.getElementById('baslik').style.textAlign ='center' ">Başlığı ortala</button><br>
+
+
+<h3 id="bir">Js Deneme</h3>
+<p id="iki">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, quia!</p>
+
+<button type="button" onclick="yeni_fonksiyon()">Yazıları Düzenle</button>
+<!-- 1-butonla yazının font size 25
+2- elemanı göster
+3-yazıyı ortalasın -->
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+.div1{
+    position: relative;
+    border: 1px solid red;
+    height: 8em;
+    z-index: -1;
+}
+.div2{
+    position: absolute;
+    background-color: yellow;
+    width: 80%;
+    left: 50px;
+    top: 3em;
+    z-index: 3;
+}
+.div3{
+    position: absolute;
+    background-color: blue;
+    width: 20%;
+    left: 60%;
+    top: 50px;
+    height: 6em;
+    opacity: 0.6;
+    z-index: 1;
+}
+    </style>
+</head>
+
+<body>
+    <div class="div1">Kutu1</div>
+    <div class="div2">Kutu2</div>
+    <div class="div3">Kutu3</div>
+</body>
+
+</html>
