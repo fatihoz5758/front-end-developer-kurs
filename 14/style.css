@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.plan {
+    text-align: center;
+    width: 33.33%;
+    float: left;
+    padding: 5px;
+
+}
+
+.inner-plan {
+    background-color: #edf5f7;
+    padding: 25px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 30px 0px rgba(100,100, 111, 0.2);
+    transition: box-shadow 1s;
+}
+.inner-plan:hover{
+    box-shadow: 0px 6px 30px 0px rgba(100,100, 111, 0.5);
+}
+.plan_badge {
+    background-color: white;
+    color: #fc997c;
+    padding: 8px;
+    border-radius: 10px;
+
+}
+
+.tavsiye {
+    background-color: #396eb0;
+    color: #fff;
+    
+}
+.plan_features{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.plan_features li{
+    margin: 6px 0; 
+}
+.container{
+    margin: 0px auto;
+    /* width: 1000px; */
+}
+.btn{
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 7px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fc997c;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+
+}
