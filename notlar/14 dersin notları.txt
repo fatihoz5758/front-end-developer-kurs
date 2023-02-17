@@ -1,0 +1,1041 @@
+---------------Notlar 1-----------------
+
+Attribute = Özellikler
+
+h1 -- heading 
+
+Attribute =====     style = "color:red;"
+
+
+tag ==00>   içiçe tag yazabiliriz --- nested tags
+
+
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text(teknik terimler vb.)
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text
+
+
+yorum satırı ( ctrl + k + c )
+yorum satırını normale çevirme   ( ctrl + k + u )
+
+<!-- Yorum buraya yazılır -->
+
+
+
+Tanımlı renkler :::
+
+red, white, coral, green,purple, pink, dodgerblue, tomato, violet
+
+
+RGB (red, green, blue)  ==>  rgb(255,0,0)
+RGBA (red, green, blue)  ==>  rgb(255,0,0, 0.5)
+
+
+HTML HEX Colors ==> hexadecimal color
+
+https://www.w3schools.com/colors/colors_rgb.asp
+https://www.w3schools.com/colors/colors_hexadecimal.asp
+https://www.w3schools.com/colors/colors_hsl.asp
+
+
+CSS => Cascading Style Sheets
+
+
+extenal CSS
+internal CSS 
+inline CSS
+
+https://www.evrenselkod.com/html-alinti-etiketleri/
+
+https://www.w3schools.com/html/html_quotation_elements.asp
+
+
+
+ <pre>
+        Şakaklarıma kar mı yağdı ne var?
+
+        Benim mi Allahım bu çizgili yüz?
+
+        Ya gözler altındaki mor halkalar?
+
+        Neden böyle düşman görünürsünüz,
+
+        Yıllar yılı dost bildiğim aynalar?
+    </pre>
+	
+---------------Notlar 2-----------------
+ <a> etiketi
+
+ linkler için target attribute - _blank, _parent, _top, _self
+
+wrapping   => sarmalamak
+
+
+<img> tag için
+
+Abbreviation        File Format        File Extension
+APNG        Animated Portable Network Graphics        .apng
+GIF            Graphics Interchange Format        .gif
+ICO            Microsoft Icon        .ico, .cur
+JPEG        Joint Photographic Expert Group image        .jpg, .jpeg, .jfif, .pjpeg, .pjp
+PNG            Portable Network Graphics        .png
+SVG            Scalable Vector Graphics        .svg
+
+
+
+HTML Image Map
+
+https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_map2
+https://www.w3schools.com/html/html_images_imagemap.asp
+
+
+
+FavIcon
+head tagına aşğıdaki etiketi ekleyin
+<link rel="icon" type="image/x-icon" href="/03/favicon.ico">
+
+https://www.favicon.cc/
+
+
+Html Lists
+    unordered List  <ul>   (kuralsız listeler)
+        liste elemanları <li>
+        style="list-style-type: circle;">
+        float:left  
+
+    ordered list    <ol>    (kurallı listeler)
+         liste elemanları <li>
+         type="1", type="A", type="a", type="I", type="i"
+
+    İçiçe listeler(Nested List)
+
+    DescriptionLists
+    https://www.w3schools.com/html/html_lists_other.asp
+
+
+HTML Tables
+tablolara her türlü tag koyabiliriz
+    text, img, list, a(link), table
+
+    Row <tr> (table row)
+
+
+
+    Column <th>  (table header)   <td>  (table data) 
+---------------Notlar 3-----------------
+
+
+
+Tablolar 
+    https://www.w3schools.com/html/html_tables.asp
+
+
+    tr:nth-child(even) {
+            background-color: lightseagreen;
+        }
+    tr:nth-child(odd) {
+            background-color: coral;
+        }
+
+
+
+HTML Block And Inline
+
+    Inline Elementler
+    <a>     <abbr>  <acronym>   <b>         <bdo>   
+    <big>   <br>    <button>    <cite>      <code>
+    <dfn>   <em>    <i>         <img>       <input>
+    <kbd>   <label> <map>       <object>    <output>
+    <q>     <samp>  <script>    <select>    <small>
+    <span>  <strong><sub>       <sup>       <textarea>
+    <time>   <tt>   <var>
+
+    Block Elementler
+    <address>   <article>   <aside>     <blockquote>    
+    <canvas>    <dd>        <div>       <dl>
+    <dt>        <fieldset>  <figcaption>  <figure>
+    <footer>    <form>      <h1>-<h6>   <header>
+    <hr>        <li>        <main>      <nav>
+    <noscript>  <ol>        <p>         <pre>
+    <section>    <table>    <tfoot>     <ul>    <video>
+
+
+
+HTML Class - Id
+
+    Class(Çok sayıda element için kullanılır)   .web{ }
+    Id(Tek olan elementler için kullanıyoruz(unique))  #font1{ }
+    
+    
+
+
+iFrame
+    <iframe width="100%" height="500px" src="https://www.blueakademie.de/" frameborder="1"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HwYJoiL-Yv0" title="YouTube video player" frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+HTML FORMS
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+input Çeşitleri
+<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week">
+
+Ayrıntılı input types:
+https://www.w3schools.com/html/html_form_input_types.asp
+
+Formlar Hakkında Ayrıntı:
+https://www.w3schools.com/html/html_forms.asp
+
+
+
+---------------Notlar 4-----------------
+
+CSS
+
+selector
+
+body{
+    ...
+    }
+
+p{
+    color:red;
+}
+
+p,h1{
+    font-size:20px;
+}
+
+
+farklı yöntemlerle css verilebilir
+=>  class yapıları için     .div1{...}
+=>  id yapıları için     #righth2{...}
+
+
+*{...}     universal selector
+
+Internal CSS. ----- tek bir sayfada kullanacaksak mantıklı
+Inline CSS.    ------tek etiket için kullacağımız css, diğerlerini ezer
+External CSS.  ----birçok sayfada kullanmak istiyorsak
+
+birçok css i tek dosyaya verebiliriz
+
+farklı css lerden tek bir elamana css kodu gelirse, yani çakışma olursa
+
+external<internal<inline,  (kodun ezilmesi oluyor)
+
+
+
+HTML
+Yorum satırları
+<!-- Burası yorum satırı -->
+
+vs code => ctrl +k +c veya ctrl + ö
+vs code yorumu açmak için ctrl +k +u
+
+
+CSS yorum satırları
+
+/* Burası yorum satırı */
+
+
+
+ background-image: url("/small.jpg");
+        background-repeat: repeat;
+
+
+        background-repeat: no-repeat;
+
+
+        background-repeat: repeat-x;
+        background-repeat: no-repeat-y;
+
+
+
+
+
+CSS Borders
+
+.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+
+
+
+
+p {
+  border: 5px solid red;
+}
+
+
+
+#red{
+        height: 80px;
+        width: 200px;
+        background-color:lightpink;
+        text-align: center;
+        border: 5px double black;
+        border-radius: 200px;
+        }
+
+---------------Notlar 5-----------------
+Margin
+
+iki eleman arası margin verirken, birimleri toplamaz, büyük olana göre hareket eder.
+
+
+tek tek margin ve padding verebiliyoruz;
+ #alt{
+    margin-top: 120px;
+    margin-left: 0;
+    margin-right: 100px;
+    padding-left: 0;
+    padding-bottom: 100px;
+}
+
+shorthand margin: margin kısayolu
+margin-top
+margin-right
+margin-bottom
+margin-left
+margin: 20px 30px 50px 5px (yukarı, sağa, aşağı, sola)
+margin: 100px 50px;(dikey, yatay)
+
+
+height and width
+
+width: 200px;
+height:200px;
+
+max-width:300px;
+max-height:300px;
+
+min-width:300px;
+min-height:300px;
+
+
+snake_case => (underscore) => alinin_evraki.html---- margin_examples.html
+margin_ex.html
+
+pascalCase => alininEvraki.html------- marginExamples.html
+
+---------------Notlar 6-----------------
+
+https://github.com/
+
+herkes git kurulumlarını tamamlamış olsun
+
+
+
+outline;
+
+    dotted - Defines a dotted outline
+    dashed - Defines a dashed outline
+    solid - Defines a solid outline
+    double - Defines a double outline
+    groove - Defines a 3D grooved outline
+    ridge - Defines a 3D ridged outline
+    inset - Defines a 3D inset outline
+    outset - Defines a 3D outset outline
+    none - Defines no outline
+    hidden - Defines a hidden outline
+
+
+    h1{
+            text-align: center;
+            border: 3px solid red;
+            color: lightblue;
+            outline: 5px ridge lightcoral;
+            outline-offset: 10px;
+        }
+    /* h1{
+        text-align: center;
+        border: 3px solid red;
+        color: lightblue;
+        outline-color: green;
+        outline-width: 5px;
+        outline-style: groove;
+    }*/
+
+Texts;
+
+Arka planla contrast oluşturmalıyız
+Tab ekleme yöntemleri:
+    1- <span style="display: inline-block; width:30px"></span>
+    2- &emsp;  veya   &nbsp;
+    3- text-indent: 30px;
+
+sağdan sola için : 
+    direction: rtl;
+    unicode-bidi: bidi-override;
+
+
+text-decoration: line-through;
+text-decoration: underline;
+text-decoration: none;
+
+text transformation
+    text-transform: lowercase;
+    text-transform: uppercase;
+    text-transform: capitalize;
+
+text-spacing
+    line-height: 40px;
+    word-spacing: 30px;
+    text-indent: 30px;
+    white-space: break-spaces;
+    text-shadow: 5px 5px 5px lightgrey;
+
+    h1 {
+    text-shadow: 0 0 3px #FF0000;
+    }
+
+    h1 {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+
+
+
+Yazı Tipler =>
+
+    SERIF, SANS SERIF, MONOSPACE
+
+    font-family; 
+    style="font-family: Arial sans-serif; font-size:30px;"
+
+
+    Web Safe Fonts
+    Arial (sans-serif)
+    Verdana (sans-serif)
+    Tahoma (sans-serif)
+    Trebuchet MS (sans-serif)
+    Times New Roman (serif)
+    Georgia (serif)
+    Garamond (serif)
+    Courier New (monospace)
+    Brush Script MT (cursive)
+
+
+    font-size:30px;
+
+    vw => viewport width   %percent (yüzde) => 1vw ekranın genişliğinin yüzde 1 ölçüsünde
+
+    /*font-size: 150%;*/
+        /*font-size: 1.2em;*/
+        font-size: 5vw;
+		
+---------------Notlar 7-----------------
+
+google fonts;
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation">
+    
+
+
+google icons:
+        <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+
+Link
+    a:link{
+        font-size: 30px;
+        color:red
+    }
+    a:visited{
+        font-size: 30px;
+        color:yellow
+    }
+    a:hover{
+        font-size: 30px;
+        color:darkmagenta
+    }
+    a:active{
+        font-size: 30px;
+        color:aqua
+    }
+
+
+
+
+    a:link{
+        font-size: 30px;
+        color:red;
+        text-decoration: none;
+        background-color: yellow;
+    }
+    a:visited{
+        font-size: 30px;
+        color:yellow;
+        text-decoration: none;
+        background-color: red;
+
+    }
+    a:hover{
+        font-size: 30px;
+        color:red;
+        text-decoration: none;
+        background-color: yellow;
+    }
+    a:active{
+        font-size: 30px;
+        color:aqua;
+        text-decoration: none;
+    }
+
+
+
+<span style="cursor: auto">auto</span><br>
+<span style="cursor: crosshair">crosshair</span><br>
+<span style="cursor: default">default</span><br>
+<span style="cursor: e-resize">e-resize</span><br>
+<span style="cursor: help">help</span><br>
+<span style="cursor: move">move</span><br>
+<span style="cursor: n-resize">n-resize</span><br>
+<span style="cursor: ne-resize">ne-resize</span><br>
+<span style="cursor: nw-resize">nw-resize</span><br>
+<span style="cursor: pointer">pointer</span><br>
+<span style="cursor: progress">progress</span><br>
+<span style="cursor: s-resize">s-resize</span><br>
+<span style="cursor: se-resize">se-resize</span><br>
+<span style="cursor: sw-resize">sw-resize</span><br>
+<span style="cursor: text">text</span><br>
+<span style="cursor: w-resize">w-resize</span><br>
+<span style="cursor: wait">wait</span>
+
+
+
+lists
+
+    ordered
+    unordered
+
+---------------Notlar 8-----------------
+
+
+favicon
+ <link rel="icon" href="favicon.ico">
+
+sections >
+
+<header>
+<main>
+<footer>
+
+
+
+display
+
+inline
+    <span>
+    <a>
+    <img>
+
+
+block
+    <div>
+    <h1> - <h6>
+    <p>
+    <form>
+    <header>
+    <footer>
+    <section>
+
+
+
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/display
+
+
+display:'none';
+display:'inline';
+display: block;
+
+visibility: hidden;
+visibility: visible;
+
+
+
+position: static;
+position: relative;
+position: fixed;
+position: absolute;
+position: sticky;
+
+---------------Notlar 9-----------------
+
+position : static
+position : relative
+position: fixed;  =>viewport= browser body alanı
+
+
+layout:yerleşim
+
+
+h1-h2-h3
+
+---------------Notlar 10-----------------
+
+<!-- font-family: 'Alex Brush', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Seymour One', sans-serif; -->
+
+
+------------------------------
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#hero{
+    background: url('/11/sun.jpg');
+    background-position: top left;
+    height: 600px;
+    width: 100%;
+    padding: 5px;
+    /*position: relative;*/
+}
+
+#hero_text{
+    color: white;
+    margin: 30px;
+    font-size: 30px;
+    font-family: 'Seymour One', sans-serif;
+    /*color: black;
+    position: absolute;
+    top: 30px;
+    right: 0px;*/
+}
+
+header{
+    background-color: #FFC3A1;
+    padding: 8px 16px;
+}
+
+.navbar{
+    /* display: inline-block; */
+    width: 100% -150px;
+    float: right;
+}
+
+.navbar_items{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar_item{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.header_logo{
+    color: #A75D5D;
+    text-decoration: none;
+    font-family: 'Seymour One', sans-serif;
+    /* font-weight: bold; */
+    font-size: 18px;
+    margin: 0 20px;
+}
+
+.navbar_item a{
+    color: #A75D5D;
+    text-decoration: none;
+}
+
+.navbar_item a:hover {
+    color: #FFD4D4
+}
+
+.navbar_item a:active{
+    color: #fff;
+}
+
+.navbar_item_contact a{
+    background-color: #7286D3;
+    padding: 4px 16px;
+    border: 0.5px solid #E5E0FF;
+    border-radius: 8px;
+}
+
+/* .navbar_item_contact a{
+    background-color: #E5E0FF;
+    color: #7286D3;
+} */
+
+.navbar_item_contact a:hover{
+    background-color: #E5E0FF;
+    color: #7286D3;
+    border: 0.5px solid #7286D3;
+}
+
+.navbar_item_contact ::before{
+    content:none
+}
+
+#work{
+    padding: 100px 10px;
+    text-align: center;
+}
+
+.row{
+    margin-bottom: 40px;
+}
+
+#work h2{
+    color: #7286D3;
+    font-size: 30px;
+}
+
+.col-3{
+    display: inline-block;
+    width: 30%;
+    padding: 15px;
+    margin: 10px;
+}
+
+.icon h3{
+    color: #7286D3;
+    font-size: 26px;
+}
+
+.icon span{
+    color: #D3756B;
+    font-size: 60px;
+    font-weight: bold;
+}
+---------------Notlar 11-----------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External JS</title>
+    <script src="/script.js"></script>
+   
+</head>
+<body>
+    <h1 id="demo">External Js Çalıştırma</h1>
+
+    <button style="margin: 30px;" type="button" onclick="yazi_duzenle()" > Stil ver </button>
+</body>
+</html>
+
+
+
+
+-------------
+
+
+function yazi_duzenle() {
+    document.getElementById('demo').style.fontSize = '50px';
+    document.getElementById('demo').style.textAlign = 'center';
+    document.getElementById('demo').style.textDecoration = 'underline';
+    document.getElementById('demo').style.color = 'blue';
+}
+
+---------------Notlar 12-----------------
+
+z-index
+
+    layout özelliği
+
+    stack-yığın
+    img {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
+        }
+
+overflow özelliği
+https://developer.mozilla.org/en-US/docs/Web/CSS/overflow
+
+
+float 
+
+Media Queries
+
+@media screen and (min-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+
+float örnekleri
+
+https://www.w3schools.com/css/css_float_examples.asp
+
+---------------Notlar 13-----------------
+
+CSS Combinators
+    seçiçiler arası ilişkiler
+
+    boşluk (space) genel seçici_çocukları ve torunları seçer
+        div p{
+                background-color: pink;
+            } 
+    
+    çocuk seçici (child selector) > sadece çocukları seçer
+        div>p{
+            background-color: pink;
+        }
+    
+    bitişik kardeş seçici +
+        div + p{
+            background-color: pink;
+        }
+    
+    (~)Genel Kardeş Seçici
+
+        div ~ p{
+                background-color: pink;
+            }
+
+
+
+CSS Pseudo-classes
+
+    a:link , a:visited, a:hover , a:active
+
+
+CSS Math Functions
+
+     width: calc( 100% - 200px);
+
+
+
+box-shadow
+div{
+    width: 200px;
+    height: 200px;
+    background-color: lightpink;
+    text-align: center;
+    line-height: 200px;
+    /* box-shadow: 10px 10px; */
+    /* box-shadow: 10px 10px lightblue; */
+    /* box-shadow: 10px 10px 5px lightblue; */
+    /* box-shadow: 10px 10px 5px 3px lightblue; */
+    box-shadow: 10px 10px 5px 3px lightblue,10px 10px 5px 3px red, 10px 10px 5px 3px green;
+}
+
+https://www.w3schools.com/css/tryit.asp?filename=trycss3_box-shadow5
+
+
+
+
+https://www.w3schools.com/css/css3_animations.asp
+
+
+
+https://www.w3schools.com/css/css3_gradients.asp
+
+---------------Notlar 14-----------------
+
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+
+
+CSS FlexBox Layout
+
+
+    display : flex; 
+
+    flex container => dışta
+         display : flex; 
+
+    içindeki elemanlar flex item oluyorlar
+
+    #flex{
+            display: flex;
+            padding: 20px;
+            background-color: orange;
+        }
+
+
+        .item{
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+
+    flex Container özellikler:
+        flex-direction
+             flex-direction: column;
+             flex-direction: column-reverse;
+             flex-direction: row;
+            flex-direction: row-reverse;
+
+        flex-wrap
+            flex-wrap: wrap;
+            flex-wrap: no-wrap;
+            flex-wrap: wrap-reverse;
+
+        justify-content(yatayda hizalama)
+            justify-content:center;
+            justify-content:flex-start;
+            justify-content:flex-end;
+            justify-content: space-around; (Başta sonda x, aralarda 2x)
+            justify-content: space-between;(başta ve sonda 0)
+            justify-content: space-evenly;(bütün boşluklar eşit)
+
+        
+        align-items (dikeyde)
+            align-items: stretch; (default)
+            align-items: center;
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: baseline;
+            https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_align-items_baseline
+
+        align-content (çok sayıda div olursa kullanıyoruz, dikeyde)
+            align-content: center;
+            align-content: flex-start;
+            align-content: flex-end;
+            align-content: space-evenly;
+            align-content: space-around;
+            align-content: space-between;
+
+        gap(boşluklar)
+            gap:20px; 
+            row-gap: 30px;
+            column-gap: 5px; 
+            gap: 30px 5px;  (row-column)
+
+
+    flex item özellikler:
+        order(sıralama)
+            <div style="order:3;">1</div>
+            <div style="order:2;">2</div>
+            <div style="order:4;" >3</div>
+            <div style="order:1;">4</div>
+
+            default olarak order:0 verilir,
+            sonra diğerlerini sıralar
+
+        
+        flex-grow
+            <div style="flex-grow: 1;"  >1</div>
+            <div style="flex-grow: 5;" >2</div>
+            <div style="flex-grow: 8;" >3</div>
+
+        
+        flex-shrink
+
+            <div style="flex-shrink: 1;"  >1</div>
+            <div style="flex-shrink: 1;" >2</div>
+            <div style="flex-shrink: 5;" >3</div>
+
+        flex-basis
+
+            <div>1</div>
+            <div style="flex-basis: 200px;">2</div>
+            <div>3</div>
+            <div>4</div>
+
+        align-self
+            <div>1</div>
+            <div>2</div>
+            <div style="align-self: center; order:1">3</div>
+            <div>4</div>
+
+        flex
+        <div class="flex-odd" style="flex:1;">1</div>
+        <div class="flex-even" style="flex:3;">2</div>
+        <div class="flex-odd" style="flex:5;">3</div>
+        <div class="flex-even" style="flex:2;">4</div>
+
+
+
+
+
+
+
+
+
+
+    - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+    - https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
+
+    - https://flexboxfroggy.com/#tr
+
+    - https://medium.com/@tayfunerbilen/css-flexbox-hakk%C4%B1nda-bcb186864093
+
+
+
+    https://www.quackit.com/css/flexbox/examples/flexbox_website_layout_examples.cfm
+
+    adresindeki layout yapılarını inceleyin
+
+
+    https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_website2
+
+    https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_image_gallery
+
+            
+
+
