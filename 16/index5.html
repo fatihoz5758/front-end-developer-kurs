@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Kodumuzu yazalım</title>
+    <style>
+        #toplama {
+            text-align: center;
+            font-size: 20px;
+            color: red;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>DEMO</h1>
+    <p id="toplama">Sonuç Buraya</p>
+
+    <script>
+        let x, y, z;
+        x = 100;
+        y = 55;
+        z = x + y;
+        document.getElementById('toplama').innerHTML = z;
+        document.write(y);
+        console.log(z);
+        window.alert(x);
+
+        function topla() {
+            let a, b;
+            x = a + b;
+            document.write(x);
+        }
+    </script>
+</body>
+
+</html>

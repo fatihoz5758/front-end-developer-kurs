@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+</head>
+
+<body>
+    <h1>Js</h1>
+    <p id="demo">Burası bir parargaf</p>
+    <p>Burası bir parargaf : <span id="demo2"></span></p>
+    <p id="demo3">Burası bir parargaf</p>
+
+    <script>
+
+        let num, num2;
+        num = 10;
+        num2 = 20.4;
+        let toplam = num + num2;
+
+        console.log(num2);
+        console.log(num + num2);
+        console.log(num * num2);
+        console.log(num / num2); 
+        document.getElementById('demo').innerHTML = toplam;
+
+        let name = "fatih";
+        let age = 30;
+        let color = 'Kırmızı';
+        let birtYear = 2023 - age;
+
+        document.getElementById('demo2').innerHTML = 'Benim Adım :' + name;
+
+        document.getElementById('demo3').innerHTML = 'Benim Adım :' + name + ' yaşım :' + age + ' doğum tarihim :' + birtYear + ' sevdiğim renk: ' + color;
+
+        console.log( name + color );
+        console.log("Merhaba" + "Dünya! " );
+        console.log("Merhaba"+ " " + "Dünya! ");
+
+        console.log( 10 + 50);
+        console.log( 10 / 50);
+        console.log( (10 / 50) * 120 + 50);
+
+        //Yorum satırı olarak yazılır
+        //Yorum satırı da olacak
+
+
+        /*Yorum satırı olarak yazılır
+        Yorum satırı da olacak
+        çok satırlı yorum
+        multi line comment
+        */ 
+
+    </script>
+
+
+</body>
+
+</html>
