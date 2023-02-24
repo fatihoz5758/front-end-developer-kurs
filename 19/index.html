@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Variables</title>
+</head>
+
+<body>
+    <h1>Değişkenler</h1>
+
+    <p id="deneme">Merhaba</p>
+
+
+
+    <script>
+        let message;
+        message = 'Selam';
+
+        // document.getElementById('deneme').innerHTML = 'Yeni İfade'
+        document.getElementById('deneme').innerHTML = message
+
+        // alert('iyi akşamlar');
+        // alert(message);
+        console.log('burası console kısmında yazılacak');
+        console.log(message);
+
+        let user = 'Fatih' //string
+        let age = 25 //number
+        message = 'iyi akşamlar';
+
+        console.log(user)
+        console.log(age)
+        console.log(message)
+        document.getElementById('deneme').innerHTML = message
+        let meyve, sebze, kasap;
+        meyve = 'Elma'
+        sebze = 'Domates'
+
+        console.log(meyve);
+        console.log(sebze);
+        console.log(kasap);
+
+        let yaş;
+        yaş = 40
+
+        console.log(yaş);
+
+        let person_name;
+        person_name = 'Ali';
+        console.log(person_name)
+
+        let person_age$ = 40;
+        console.log(person_age$)
+
+        let number1 = 100;
+        let number2 = 200;
+
+        console.log(number1 + number2);
+        console.log(number1 * number2);
+        console.log(number1 / number2);
+        console.log(number1 + number2 * 500);
+        console.log(number1 - number2);
+        console.log(number1 - number2 / 100);
+
+        let number3 = '500';
+        let number4 = '1000';
+
+        console.log(number3 + ' ' + number4);
+
+        let boy, girl;
+        boy = 'Ali'
+        girl = 'Ayşe'
+
+        console.log(boy + ' ' + girl);
+        console.log(boy * girl);
+
+        console.log(0 / 1);
+        console.log(1 / 0);
+
+        let str1, str2
+        str1 = 'Hello'
+        str2 = 'Arkadaşımla konuşurken bana şunu dedi:'
+        console.log(str2, str1)
+
+        // let newText;
+        // // newText = "Arkadaşımla konuşurken bana söylediği şey: $(str1)";
+        // console.log(newText)
+
+        let loggedIn;
+        loggedIn = true;
+        let isBigger18;
+        isBigger18 = false;
+
+        console.log(loggedIn);
+        console.log(isBigger18);
+
+        let buyuktur;
+        // buyuktur = 4 >1 ;
+        buyuktur = 5 > 10;
+        console.log(buyuktur);
+        console.log('-------------');
+
+        console.log(100 > 50)
+        console.log(50 > 100)
+        console.log(50 + 100 == 200);
+        console.log(50 + 100 == 150);
+
+        let cocukYasi = 15;
+        let eriskinMi;
+        eriskinMi = cocukYasi > 18;
+        console.log(eriskinMi);
+        console.log(cocukYasi > 18);
+
+        console.log(typeof eriskinMi);
+        console.log(typeof cocukYasi);
+        console.log(typeof str1);
+        console.log(typeof 100);
+        console.log(typeof 100.5);
+        console.log(typeof 'Ali');
+        console.log(typeof '500');
+        console.log(typeof (2 + 2));
+
+        var isim = 'Mehmet';
+        var age1, birthDate;
+        age1 = 50;
+        isim = 'Ahmet';
+        birthDate = '12.12.1973';
+        console.log('isim :', isim, ' yaş :', age1, ' doğum tarihi :', birthDate);
+
+        const piNumber = 3.14;
+        console.log(piNumber);
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
