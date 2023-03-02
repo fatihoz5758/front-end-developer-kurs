@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Metodları</title>
+
+
+</head>
+<body>
+    <h1>String methods</h1>
+
+    <p id="demo"></p>
+
+    <script>
+        let str = 'Merhaba';
+        let str2 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit qui porro accusamus reiciendis quidem? Nemo necessitatibus animi perspiciatis sed maxime eius, laudantium libero qui nesciunt, consequatur cumque, possimus ea aperiam!';
+        str = 'Elma, armut, karpuz, kavun aldım.';
+
+        // document.getElementById('demo').innerHTML = str.length;
+        // document.getElementById('demo').innerHTML = str2.length;
+        // document.getElementById('demo').innerHTML = str.slice( 10, 15);
+        // document.getElementById('demo').innerHTML = str.slice( 1, 5);
+        document.getElementById('demo').innerHTML = str.slice( 0, 4);
+
+        let text = 'Elma, armut, kiraz, kavun, kiraz, Kiraz aldım.';
+
+        console.log(text.slice(6,11));
+        console.log(text.slice(11));
+        console.log(text.substring(11));
+        console.log(text.substr(11));
+
+        //yerine koyma
+        console.log(text.replace( 'armut' , 'mango'));
+        console.log(text);
+        // text = text.replace( 'armut' , 'mango');  //komple değişsin istersem
+        console.log(text.replace( 'kiraz' , 'portakal' ));
+        console.log(text.replace( 'Kiraz' , 'portakal' )); //case sensitive
+        console.log(text.replaceAll( 'kiraz' , 'portakal' ).replaceAll('Kiraz' , 'portakal')); 
+        
+        console.log(text.toLocaleUpperCase());
+        console.log(text.toLocaleLowerCase());
+
+        let text1 = 'Selam';
+        let text2 = 'arkadaşlar';
+
+        console.log(text1 + ' ' + text2)
+        console.log(text1.concat(' ', text2 ));
+        console.log(text1.concat('-', text2 ));
+        console.log(text1.concat('güzel', text2 ));
+        console.log(text1.concat(' güzel ', text2 ));
+
+        let text3 = '       selam   ';
+        console.log(text3);
+        console.log(text3.trim());
+
+        // split metodu listeye çevirir
+        console.log(text.split(','));
+
+
+
+
+
+
+    </script>
+</body>
+</html>

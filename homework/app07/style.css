@@ -1,0 +1,234 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #444;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+.row {
+    grid-area: row;
+}
+
+
+
+footer {
+    grid-area: footer;
+}
+
+body {
+    display: grid;
+    background-color: white;
+    /* gap: 10px; */
+    height: 100%;
+    grid-template-rows: 160px auto 400px 100px;
+    grid-template-areas:
+        "header header header header header header"
+        "main main main main main main"
+        "row row row row row row "
+        "footer footer footer footer footer footer";
+    justify-content: space-between;
+}
+
+/* header  bölümü */
+header {
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+
+}
+
+.logo {
+    width: 200px;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.logo img {
+    width: 150px;
+    height: 100px;
+}
+
+.logo h3 {
+    margin: 5px auto;
+    font-size: 25px;
+    color: rgb(218, 137, 16);
+    font-weight: bold;
+    text-shadow: 2px 2px 0px #444;
+}
+
+
+nav {
+    display: flex;
+    padding: 2% 10% 2% 2%;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px 20px;
+}
+
+nav ul li a {
+    color: #444;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px 50px;
+}
+
+nav ul li a:hover {
+    color: orangered;
+}
+
+.ileti {
+    border: 1px solid black;
+    padding: 8px 30px;
+    color: #f0e7e7;
+    background-color: rgba(4, 9, 30, 0.9);
+    box-shadow: 10px 10px 1px rgb(110, 106, 106);
+    transition: 0.8s;
+}
+
+.ileti:hover {
+    box-shadow: none;
+
+}
+
+/* main bölümü */
+main {
+    background-image: linear-gradient(to left, rgba(4, 9, 30, 0.9), rgba(4, 9, 30, 0.3)), url(image/main.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+}
+
+.main_box {
+
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* absolute kullnırken yazı ortalanınca koyulması gerekiyır */
+    text-align: center;
+    color: #f0e7e7;
+}
+
+.main_box h3 {
+    margin: 60px auto;
+
+}
+
+.main_box h1 {
+    font-size: 50px;
+
+    /* content bölümü */
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    margin: auto;
+    position: relative;
+
+}
+
+.sol_section {
+    text-align: center;
+    font-weight: bold;
+    width: 25%;
+    margin: 20px 50px 0px 10px;
+}
+
+.sol_section h2 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.sol_section a {
+    display: block;
+    padding: 15px 20px;
+    text-align: center;
+    border: 1px solid #08c;
+    background-color: #08c;
+    border-radius: 10px;
+    margin: 10px auto;
+    text-decoration: none;
+    color: #f0e7e7;
+    width: 90%;
+    font-size: 22px;
+
+}
+
+.sol_section a:hover {
+    background-color: #5472D2;
+}
+
+.sag_section {
+    width: 75%;
+    display: flex;
+    text-align: center;
+    gap: 20px;
+    padding-left: 125px;
+}
+
+.sag_section img {
+    margin-top: 125px;
+    width: 225px;
+    height: 160px;
+    padding: 5px;
+    box-shadow: 0 0 20px 0 rgba(34, 33, 33, 0.3);
+
+}
+
+.sag a {
+    text-decoration: none;
+    color: #444;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.sag a:hover {
+    color: #5472D2;
+    font-size: 25px;
+}
+
+/* footer bölümü */
+
+footer {
+    margin-top: 50px;
+    width: 90%;
+    padding: 30px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+}

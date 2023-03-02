@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>Javascript</h1>
+    <p id="demo"></p>
+    <input type="text" id="isim">
+    <button onclick="isimleSelamla()" > İsmimi Göster </button>
+    <script> 
+        function merhabaDe(name='Ali' , age=50){
+            alert('Merhaba ' + name);
+            console.log(age);
+        }
+        // merhabaDe();
+        function toplama( num1, num2 ){
+            return num1 + num2
+        }
+        toplama( 3 + 5);
+        console.log(toplama( 5 , 3));
+        console.log(toplama( 100 , 500));
+        // alert(toplama(800 , 500));
+        document.getElementById('demo').innerHTML = toplama(1000 , 500);
+        function selamla(){
+            console.log('Hepinize Merhaba');
+        }
+        selamla();
+        
+        function isimleSelamla(  ){
+            let inputName = document.getElementById('isim').value;
+            alert( 'hoşgeldin ' + inputName );
+        }
+        
+        // arrow function
+        let toplam = ( a, b ) => {return a + b};
+
+        console.log(toplam(40 , 50));
+        console.log(toplam('Merhaba ' , 'Dünya'));
+
+        let cikarma = ( a, b ) => { console.log( a - b) };
+
+        cikarma( 100, 50 )
+
+        let value = true;  //boolean true, false
+
+        console.log(value);
+        console.log(typeof value);
+        console.log(String(value));
+        console.log(typeof String(value));
+        console.log(Number(value));
+        console.log(typeof Number(value));
+
+
+    </script>
+
+</body>
+</html>

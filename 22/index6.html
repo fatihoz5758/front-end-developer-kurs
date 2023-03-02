@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .item1 {
+            grid-area: header;
+        }
+
+        .item2 {
+            grid-area: menu;
+        }
+
+        .item3 {
+            grid-area: main;
+        }
+
+        .item4 {
+            grid-area: right;
+        }
+
+        .item5 {
+            grid-area: footer;
+        }
+
+        .grid-container {
+            display: grid;
+            background-color: lightsteelblue;
+            gap: 10px;
+            height: 100%;
+            grid-template-rows: 150px auto 100px;
+            grid-template-areas: 
+                "header header header header header header"
+                "menu main main main right right"
+                "menu footer footer footer footer footer";
+
+        }
+
+        .grid-container>div {
+            background-color: rgba(0, 0, 0, 0.2);
+            color: white;
+            font-size: 22px;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        @media (max-width : 900px) {
+
+            .grid-container {
+
+                display: grid;
+                background-color: lightsteelblue;
+                gap: 10px;
+                height: 100%;
+                grid-template-rows: 70px auto 200px 100px;
+                grid-template-areas:
+                    "header header header header header header"
+                    "menu menu main main main main"
+                    "right right right right right right"
+                    "footer footer footer footer footer footer";
+
+            }
+
+        }
+
+        @media (max-width : 700px) {
+
+            .grid-container {
+
+                display: grid;
+                background-color: lightsteelblue;
+                gap: 10px;
+                height: 100%;
+                grid-template-rows: 70px auto auto 200px 100px;
+                grid-template-areas:
+                    "header header header header header header"
+                    "menu menu menu menu menu menu"
+                    "main main main main main main"
+                    "right right right right right right"
+                    "footer footer footer footer footer footer";
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="item1">Header</div>
+        <div class="item2">Menu</div>
+        <div class="item3">Main</div>
+        <div class="item4">Right</div>
+        <div class="item5">Footer</div>
+    </div>
+</body>
+
+</html>

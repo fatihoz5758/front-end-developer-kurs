@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Casting</title>
+</head>
+<body>
+    <h1>Veri Tipi Değiştirme</h1>
+
+
+    
+    <script>
+
+        // alert( 6 / 2 );
+        // alert( '6' / '2' );
+        // alert( 'ali' / 'ahmet' );  //NaN
+
+        let str = '123';
+        console.log(str);
+        console.log(typeof str);
+        console.log(typeof Number(str))
+        console.log(typeof str);
+        str = Number(str);
+        console.log(typeof str);
+
+        let str2 = 'Ali';
+        str2 = Number(str2);
+        console.log( str2);
+
+        console.log(Number( '     123   '  ));
+        console.log(Number( '123z   '  ));
+
+        // let birthYear = prompt('Doğum Yılınız :');
+        // birthYear = Number( birthYear );
+
+        // while(isNaN(birthYear)){
+        //     birthYear = prompt('Lütfen sadece sayı giriniz - Doğum Yılınız :');
+        // }
+
+        // console.log(birthYear);
+
+
+        // let age = 2023 - birthYear;
+
+        // console.log( 'yaşınız : ', age);
+
+        console.log( Boolean(1) );
+        console.log( Boolean(0) );
+        console.log( Boolean(1000) );
+        console.log( Boolean(-1000) );
+        console.log( Boolean('merhaba') );
+        console.log( Boolean('Ali') );
+        console.log( Boolean('') );   //true
+        console.log( Boolean(' ') );
+        console.log( Boolean() );
+
+
+    </script>
+</body>
+</html>
