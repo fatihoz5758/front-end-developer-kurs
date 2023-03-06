@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Tane İl</title>
+
+    <style>
+        #sehir{
+            margin: 10px;
+            color: darkblue;
+            font-size: 22px;
+        }
+
+        #sira{
+            margin: 10px;
+            color: darkgoldenrod;
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Şehir Listesi</h1>
+    <label for="">Listeye 10 Tane Şehir İsmi Ekleyelim</label>
+    <input type="text" id="citi">
+    <button onclick="ekle()"> Listeye Ekle</button>
+
+    <p id="sehir"></p>
+    <p id="sira"></p>
+    <p id="sira2"></p>
+    <hr>
+   Liste
+   <p>1. <span id="bir"></span></p>
+   <p>2. <span id="iki"></span></p>
+   <p>3. <span id="uc"></span></p>
+   <p>4. <span id="dort"></span></p>
+   <p>5. <span id="bes"></span></p>
+   <p>6. <span id="alti"></span></p>
+   <p>7. <span id="yedi"></span></p>
+   <p>8. <span id="sekiz"></span></p>
+   <p>9. <span id="dokuz"></span></p>
+   <p>10. <span id="on"></span></p>
+
+
+<script>
+
+let sehirlerimiz = [ ];
+document.getElementById('sehir').innerHTML= sehirlerimiz;
+function ekle(){
+
+let sehir = document.getElementById('citi').value;
+sehirlerimiz.push(sehir);
+document.getElementById('citi').value= '';
+console.log(sehirlerimiz);
+
+document.getElementById('sehir').innerHTML = sehirlerimiz;
+
+document.getElementById('sira').innerHTML = 'Ankara ili listemdeki sırası : '+ (sehirlerimiz.indexOf('ankara') + 1);
+
+sehirlerimiz.sort();
+
+document.getElementById('sira2').innerHTML = sehirlerimiz;
+
+document.getElementById('bir').innerHTML = sehirlerimiz[0];
+document.getElementById('iki').innerHTML = sehirlerimiz[1];
+document.getElementById('uc').innerHTML = sehirlerimiz[2];
+document.getElementById('dort').innerHTML = sehirlerimiz[3];
+document.getElementById('bes').innerHTML = sehirlerimiz[4];
+document.getElementById('alti').innerHTML = sehirlerimiz[5];
+document.getElementById('yedi').innerHTML = sehirlerimiz[6];
+document.getElementById('sekiz').innerHTML = sehirlerimiz[7];
+document.getElementById('dokuz').innerHTML = sehirlerimiz[8];
+document.getElementById('on').innerHTML = sehirlerimiz[9];
+}
+
+
+
+
+
+
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Arrays- ekleme çıkarma</title>
+</head>
+<body>
+    <h1>Js Dizileri</h1>
+
+<script>
+    let days = [ 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']; 
+console.log(days[0]);
+console.log(days[6]);
+console.log(days[days.length - 1]);
+console.log(days.length);
+console.log(days.length - 1);
+console.log(days.length * 2);
+// days[7] = 'elma';
+// days[days.length] ='Armut'
+let meyveler = ['elma', 'armut', 'portakal']
+
+
+meyveler.push('Karpuz');
+console.log(meyveler);
+console.log(meyveler[3]);
+console.log(meyveler[4]);
+meyveler[6] = 'kivi';
+console.log(meyveler);
+console.log(meyveler[5]);
+
+let person = {name:'Ali', surname:'İstanbul', age: 50, address: 'Merkez Mh', city:'Ankara'};
+console.log(person.name);
+
+let sebzeler = ['patlıcan', 'biber', 'domates', 'salatalık'];
+console.log(typeof sebzeler);
+let name = 'ahmet'
+console.log(Array.isArray(sebzeler));
+console.log(Array.isArray(name));
+console.log(Array.isArray(person));
+console.log( sebzeler instanceof Array);
+console.log( sebzeler instanceof Number);
+console.log( sebzeler instanceof Object);
+
+console.log(sebzeler);
+sebzeler.pop(); //sondaki elemanı siler
+console.log(sebzeler);
+sebzeler.shift(); //ilk sıradaki indesi siler
+console.log(sebzeler);
+sebzeler.unshift('marul'); //ilk sıraya yeni indes ekler
+console.log(sebzeler);
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Fonksiyonlar - Events</title>
+    <style>
+        div {
+            margin: 10px;
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            /* text-align: center; */
+            /* line-height: 150px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .div1 {
+            background-color: lightpink;
+        }
+
+        .div2 {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button onclick="tarihGoster()">Tarihi Göster</button>
+
+    <div class="div1" onmouseover=" tarihGoster() ">Üzerime Gel</div>
+
+    <div class="div2" onmouseout=" tarihGoster() ">Üzerimden Ayrıl</div>
+
+    <select id="mySelect" onchange="elemanSec()">
+        <option value="">Takım Seç</option>
+        <option value="Galatasaray">Galatasaray</option>
+        <option value="Fenerbahce">Fenerbahçe</option>
+        <option value="Besiktas">Beşiktaş</option>
+        <option value="Trabzonspor">Trabzonspor</option>
+    </select>
+
+    <p id="demo"></p>
+
+    <p id="demo2"></p>
+
+
+
+<script>
+function tarihGoster(){
+    document.getElementById('demo').innerHTML = Date();
+}
+
+function elemanSec(){
+    var kulup = document.getElementById('mySelect').value;
+    document.getElementById('demo').innerHTML = 'Tuttuğunuz Takım : ' + kulup;  
+
+}
+function toplama (a , b){
+    document.getElementById('demo').innerHTML = a + b;
+    return a + b;
+}
+
+document.getElementById('demo2').innerHTML = toplama (1000 , 2200)
+
+</script>
+
+
+
+
+</body>
+
+</html>

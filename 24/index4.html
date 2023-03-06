@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS map() Metodu</title>
+</head>
+    <h1>JS map() Metodu</h1>
+
+    <h2 id="listem"></h2>
+<p id="demo"> </p>
+<p id="demo1"> </p>
+<p id="demo2"> </p>
+
+<body>
+    <script>
+        const numbers = [15, 23, 65, 33, 111];
+        document.getElementById('listem').innerHTML = ' Listem : ' + numbers;
+
+        const doubleNumbers = numbers.map(ikiKatHesapla);
+
+        const doubleNumbers2 = [ numbers[0], numbers[1], numbers[2]].map(ikiKatHesapla);
+
+        const squareNubers = numbers.map (karesiniHesapla);
+
+function ikiKatHesapla ( sayi ){
+return sayi * 2 
+}
+function karesiniHesapla (sayi){
+    return sayi ** 2
+}
+
+document.getElementById('demo').innerHTML = ' İki katları listesi :' + doubleNumbers;
+document.getElementById('demo1').innerHTML = ' Secili İki katları listesi :' + doubleNumbers2;
+document.getElementById('demo2').innerHTML = ' Kareleri listesi : ' + squareNubers;
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

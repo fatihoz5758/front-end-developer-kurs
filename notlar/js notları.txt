@@ -1,0 +1,435 @@
+js Notları
+
+--------------------------- 1 ---------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External JS</title>
+    <script src="/script.js"></script>
+   
+</head>
+<body>
+    <h1 id="demo">External Js Çalıştırma</h1>
+
+    <button style="margin: 30px;" type="button" onclick="yazi_duzenle()" > Stil ver </button>
+</body>
+</html>
+
+
+
+
+-------------
+
+
+function yazi_duzenle() {
+    document.getElementById('demo').style.fontSize = '50px';
+    document.getElementById('demo').style.textAlign = 'center';
+    document.getElementById('demo').style.textDecoration = 'underline';
+    document.getElementById('demo').style.color = 'blue';
+}
+
+
+--------------------------- 2 ---------------------------
+
+JS Outputs
+
+document......innerHTML = 'xxxxxxxx'
+
+    document.getElementById("toplama").innerHTML = 5 + 10;
+
+
+document.write()
+
+    <script>
+        document.write(5 * 100);
+    </script>
+
+alert() metodu
+
+    <button  type="button" onclick="window.alert('Merhaba Alarm')" >Alarm ver</button>
+
+
+console.log() metodu
+
+    <script>
+        console.log(10/3)
+    </script>
+
+
+
+Çift tırnak ve tek tırnak kullanımı:
+    "   ' merhaba'  "        veya   '  "merhaba"    '
+    ' ' merhaba '  '=>hatalı kullanım,    " "merhaba " "=> hatalı
+
+
+
+Javascript   Statements
+
+    let x;
+    let y, z;
+    x = 5;
+    z = x + y;
+    //yukarıda değişken tanımlamaları yapılmıştır
+    // değerler, değişkenleri, yorum satırları, atamalar, Anahtar Kelimeler
+    // yazım kurallarına => Syntax
+    // her dilin bir syntax i var
+
+
+
+
+
+     <script>
+        let x, y, z;
+        x = 100;
+        y = 55;
+        z = x + y;
+        document.getElementById('toplama').innerHTML = z;
+        document.write(y);
+        console.log(x*z);
+        window.alert(z);
+
+    </script>
+	
+	whitespace in JS
+        <script>
+        let x,y,          z          ;
+        x=100;
+        y =             55;
+        z             =x+y;
+        document.getElementById('toplama').innerHTML=        z;
+        document.write(      y    );
+        console.log(x*           z      );
+        window.alert(z);
+        </script>
+
+
+        <script>
+        let x, y, z; x = 100; y = 55; z = x + y; document.getElementById('toplama').innerHTML = z; document.write(y); console.log(x*z); window.alert(z);
+        </script>
+
+
+code blocks = kod bloklar {}
+
+    function topla(){
+        let a, b;
+        x = a + b;
+        document.write(x);
+    }
+
+
+keywords (anahtar kelimeler)
+
+    let, var, const, function, if, for, return, try, catch
+    
+    https://www.w3schools.com/js/js_reserved.asp
+
+
+
+js  sayılar => number
+
+    let sayi, sayi2;
+    sayi = 10; (sayı)
+    sayi2 = 20.4; (ondalık sayı)
+    let toplam = sayi + sayi2;
+
+js metinler => string
+    '    ' veya   "   "
+
+    "Gökhan" + "selam" ==> Gökhanselam
+
+    let name = "Gökhan";
+    let color = 'Kırmızı';
+    console.log( name + " " + color );
+
+dört işlem yapabiliyoruz( + - * /)arithmetic operators
+
+= assignment operator  (atama operatörü)
+    5 + 8 = 13;(YANLIŞ KULLANIM)
+    = ifadesi atama operatörü olarak kullanılır
+
+
+Comments (yorum satırı)
+
+    // 
+    // aşağıda toplam işlemi yapıyor
+
+
+        /*
+        burası yorum
+        burası da yorum
+        burası da da yorum
+        burası çok satırlı yorum 
+        multi line comment
+        */
+
+İsimlendirmeler
+    harfleri kullanıyoruz (a-z, A-Z)
+    $, _(alt çizgi işareti underscore)
+    js case sensitive  ( büyük ile küçük harf fark eder)
+    let ahmet;
+    let aHmet;
+    let soyisim;
+    let soyIsim;(ayrı değişkenler)
+	
+-------------------------- 3 ---------------------------	
+
+   <button onclick="window.print()" >Sayfayı yazdır</button>
+    <button onclick="yazdir()" >Sayfayı fonksiyon ile yazdır</button>
+
+      function yazdir(){
+            window.print();
+        }
+
+
+
+Arithmetic Operators ( +, - , *, /, **, %, ++, --)
+
+
+Assignment Operators(atama operatörleri)
+=                x = y                x = y
++=                x += y                x = x + y
+-=                x -= y                x = x - y
+*=                x *= y                x = x * y
+/=                x /= y                x = x / y
+%=                x %= y                x = x % y
+**=        x       **= y                x = x ** y
+
+Comparison Operators
+Logical Operators
+Conditional Operators
+Type Operators
+
+
+
+- functions(fonksiyonlar)
+
+    yazılımda sık kullanıyoruz
+    tekrar eden işlemler için birebir
+
+    function fonksiyonAdi( parametre1, paraetre2, parametre3.... ){
+                //body
+            }
+
+    showMessage()
+    getAge()
+    calcTotal()
+    createForm()
+    checkTotal()
+
+    yasiHesapla()
+    toplamiCagir()
+    x()
+    y()
+	
+	-------------------------- 4 ---------------------------
+	 Data Types
+        String   =>   'Mehmet' veya "Ali"
+        Number   =>   12, 15 , 1000,  15.7
+        Boolean  =>   true veya false
+
+
+        String(true)  =>  'true'
+
+        boolean için =>  true:1 ,  false:0
+
+
+        NaN => not a number
+
+        console.log( Boolean(1) );   //true
+        console.log( Boolean(0) );   //false
+        console.log( Boolean('merhaba') );
+        console.log( Boolean('Ali') );
+        console.log( Boolean('') );
+
+    String metodları
+
+        str.length;
+        str.slice();
+
+        text.slice(6,11) // 0. indisten saymaya başlanır, parametrelerden ilki dahil, ikincisi değil
+          console.log(text.replace( 'armut' , 'mango'));
+        console.log(text);
+        // text = text.replace( 'armut' , 'mango');  //komple değişsin istersem
+        console.log(text.replace( 'kiraz' , 'portakal' ));
+        console.log(text.replace( 'Kiraz' , 'portakal' )); //case sensitive
+        console.log(text.replaceAll( 'kiraz' , 'portakal' )); 
+
+
+
+    ARRAYS - DİZİLER
+
+  // Array (Dizi)
+        let renkler = ['mavi', 'kırmızı', 'beyaz'];
+        console.log(renkler);
+        console.log(renkler[0]);
+
+        let sayilar = [ 1, 2, 3, 100, 25, 33];
+        console.log(sayilar);
+        console.log(sayilar[0]);
+        console.log(sayilar[2]);
+        console.log(sayilar[5]);
+        console.log(typeof renkler);
+
+
+        // Object(nesne)
+        let person = { name : 'Ahmet' ,  surname : 'Ak' , age : 50 };
+        console.log(typeof person);
+        console.log(person);
+        console.log(person.name);
+        console.log(person.age);
+		
+		-------------------------- 5 ---------------------------
+		
+		
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Fonksiyonlar - Events</title>
+
+    <style>
+        div {
+            margin: 10px;
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            /* text-align: center; */
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            /* line-height: 150px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .div1 {
+            background-color: lightpink;
+        }
+
+        .div2 {
+            background-color: lightgreen
+        }
+    </style>
+</head>
+
+<body>
+
+    <button onclick="tarihGoster()"> Tarihi göster</button>
+
+    <div class="div1" onmouseover=" tarihGoster()"> Üzerime Gel</div>
+
+    <div class="div2" onmouseout=" tarihGoster()"> Üzerime Ayrıl</div>
+
+    <select id="mySelect" onchange="elemanSec()">
+        <option value="Galatasaray">Galatasaray</option>
+        <option value="Fenerbahce">Fenerbahçe</option>
+        <option value="Besiktas">Beşiktaş</option>
+        <option value="Trabzonspor">Trabzonspor</option>
+    </select>
+
+    <p id="demo"></p>
+
+    <p id="demo2"></p>
+
+
+    <script>
+
+    function tarihGoster(){
+        document.getElementById('demo').innerHTML = Date();
+    }
+
+    function elemanSec(){
+        var kulup = document.getElementById('mySelect').value;
+        document.getElementById('demo').innerHTML = 'Tuttuğunuz takım : ' + kulup 
+    }
+
+    function toplama(a , b) {
+        document.getElementById('demo').innerHTML = a + b;
+        return a + b;
+    }
+
+    document.getElementById('demo2').innerHTML = toplama( 1000, 2200);
+
+
+    </script>
+
+</body>
+
+</html>
+
+
+-----Events:
+    onchange
+    onclick
+    onmouseover
+    onmouseout
+
+
+https://www.w3schools.com/js/js_events.asp
+
+
+data types =>
+    String  => ' '  ,  " "
+    number => 3, 5, 7, 5.5
+    boolean(true, false) (1,0)
+    object   =>   { name : 'Serdar' , age : 52 }    JSON
+    array    =>   [  'Serdar' , 'Ünzüle' , 'Ayşe'  ]
+
+
+-------------------------- 6 ---------------------------
+
+array methods;
+
+    - push()  //sona eleman ekler
+        days.push('karpuz');
+        days[days.length] = 'armut';
+
+    - pop()  /sondaki elemanı siler
+        sebzeler.pop(); 
+
+    - shift()  //ilk elemanı siler
+        sebzeler.shift();
+
+    - unshift()  //en başa eleman ekler
+        sebzeler.unshift('Marul');
+
+    - concat()   //listeleri birleştiriyor
+        let insanlar = kadinlar.concat(erkekler);
+        let canlilar = kadinlar.concat(erkekler, hayvanlar);
+
+    - sort()    //string sıralama
+        erkekler.sort();
+
+    - reverse()  //string tersten sıralama
+        erkekler.reverse();
+
+    - numbers.sort( function(a,b) {return a - b}) ;  //rakam sıralama
+    - numbers.sort( function(a,b) {return b - a}) ;     //rakam ters sıralama
+
+
+    ITERABLE METODLAR
+
+        - forEach()
+                erkekler.forEach( fonksiyonum );
+                document.getElementById('demo').innerHTML = text;
+                function fonksiyonum( isim  ){
+                    text += isim + '<br>'
+                }
+
+
+        - map()
+
+
+        - filter()
+
+        - indexOf()
+            console.log( renkler.indexOf( 'mavi' ) );

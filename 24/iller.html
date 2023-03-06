@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favori Şehirlerim</title>
+</head>
+
+<body>
+    <h1>Favori Şehirlerim</h1>
+
+    <select id="citi">
+        <option value="">Şehir Seç</option>
+        <option value="Ankara">Ankara</option>
+        <option value="Sivas">Sivas</option>
+        <option value="Sinop">Sinop</option>
+        <option value="Kocaeli">Kocaeli</option>
+        <option value="Sakarya">Sakarya</option>
+        <option value="izmir">İzmir</option>
+        <option value="Diyarbakir">Diyarbakır</option>
+        <option value="Edirne">Edirne</option>
+        <option value="Tekirdag">Tekirdağ</option>
+    </select>
+    <button onclick="ekle()">Ekle</button>
+<h2>Senin Favori Şehrin</h2>
+<p id="sehir"></p>
+<p id="sira"></p>
+
+<hr>
+
+
+<script>
+let cities = [];
+document.getElementById('sehir').innerHTML = cities;
+function ekle(){
+let sehir = document.getElementById('citi').value;
+// cities.unshift(sehir);
+cities.push(sehir);
+console.log(cities);
+
+document.getElementById('sehir').innerHTML = cities;
+
+document.getElementById('sira').innerHTML = 'Ankara ili listemdeki sırası : '+ (cities.indexOf('Ankara') + 1);
+
+
+}
+
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+
+</html>

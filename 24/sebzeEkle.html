@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sunshift () metodu ile listeye veri ekleme</title>
+</head>
+
+<body>
+    <h1>sunshift () metodu ile listeye veri ekleme</h1>
+    <label for="">Listeye eklenecek sebzayi giriniz</label>
+    <input type="text" id="sebze">
+    <button onclick="ekle()"> Listeye Ekle</button>
+    <hr>
+    <p id="sebzelerParagraf"></p>
+
+
+<script>
+let sebzeler = [ ];
+document.getElementById('sebzelerParagraf').innerHTML= sebzeler;
+function ekle(){
+    // console.log('button çalıştı');
+
+    let sebze = document.getElementById('sebze').value;
+    sebzeler.unshift(sebze);
+    document.getElementById('sebze').value='';
+    console.log(sebzeler);
+
+    document.getElementById('sebzelerParagraf').innerHTML = sebzeler;
+}
+
+
+</script>
+
+</body>
+
+</html>

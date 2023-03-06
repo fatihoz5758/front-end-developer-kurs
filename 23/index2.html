@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Object</title>
+</head>
+
+<body>
+    <h1>Js Nesneleri</h1>
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <hr>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <hr>
+
+
+
+
+
+
+    <script>
+        let adam = 'Serdar';
+        let kadin = 'Ünzüle';
+        let num1 = 5;
+
+        let home = { sehir: 'Ankara', ilce: 'Çankaya', zipCode: '06100', alanı: 160 };
+
+        document.getElementById('demo').innerHTML = home.sehir;
+        document.getElementById('demo2').innerHTML = home.ilce;
+        document.getElementById('demo3').innerHTML = home.zipCode;
+
+        // person (emine kale 40 adana)
+
+        let person = {
+            isim: 'Emine', Soyisim: 'Kale', yas: 40, Memleket: 'Adana',
+            fullName: function () {
+                return this.isim + ' ' + this.Soyisim;
+            }
+        }
+
+        document.getElementById('demo4').innerHTML = person.isim;
+        document.getElementById('demo5').innerHTML = person.Soyisim;
+        document.getElementById('demo6').innerHTML = person.yas;
+        document.getElementById('demo7').innerHTML = person.Memleket;
+        document.getElementById('demo8').innerHTML = person.fullName();
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

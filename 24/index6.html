@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İndexof() metodu</title>
+</head>
+
+<body>
+    <h1>İndexof() metodu</h1>
+    <p id="listem"></p>
+    <p id="demo" ></p>
+    <p id="demo2" ></p>
+
+    <script>
+
+        let renkler = ['mavi', 'yeşil', 'kırmızı', 'sarı', 'turkuaz'];
+        document.getElementById('listem').innerHTML = 'Listem : ' + renkler;
+        console.log(renkler.indexOf('mavi'));
+        console.log(renkler.indexOf('pembe'));
+        console.log(renkler.indexOf('sarı'));
+
+
+
+
+        document.getElementById('demo').innerHTML = 'Mavi rengin listedeki sırası : ' + (renkler.indexOf('mavi') + 1);
+        document.getElementById('demo2').innerHTML = ' Kırmızı rengin listedeki sırası : ' + (renkler.indexOf('kırmızı') + 1);
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

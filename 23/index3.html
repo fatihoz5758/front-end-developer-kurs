@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Arrays-Diziler</title>
+</head>
+<body>
+    <h1>Js Dizileri</h1>
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+
+<script>
+    // let vegetables = new Array('apple','Mango','Apricot');
+    // console.log(vegetables);
+
+
+let meyveler = ['elma', 'armut', 'portakal', 'muz'];
+
+document.getElementById('demo').innerHTML = meyveler;
+console.log(meyveler);
+
+let colors = []
+console.log(colors);
+
+colors[0] = 'red';
+colors[1] = 'yellow';
+colors[2] = 'orange';
+colors[3] = 'blue';
+console.log(colors);
+
+console.log(colors[3]);
+colors[1] = 'Green';
+console.log(typeof colors);
+
+let array1 = [];
+console.log(array1);
+// document.getElementById('demo').innerHTML = array1;
+array1[0] = 100;
+document.getElementById('demo2').innerHTML = array1;
+array1[1] = 'elma';
+array1[2] = Date();
+console.log(array1);
+
+
+array1[3] = colors;
+console.log(array1);
+array1[4] =25;
+
+let tarih = array1[2];
+console.log(tarih);
+
+console.log(array1.length);
+console.log(array1.length -1);
+document.getElementById('demo3').innerHTML= array1[array1.length-1];
+console.log(array1[0]);
+
+let cities = ['Ankara','İstanbul','Adana','Sinop','Çorum'];
+
+let metin = '<ul>';
+
+for (let i = 0; i<cities.length; i++){
+    metin+= '<li>' + cities[i] + '</li>'
+    metin += '</ul>';
+}
+
+document.getElementById('demo4').innerHTML = metin;
+
+
+</script>
+
+
+</body>
+</html>
