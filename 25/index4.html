@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch</title>
+</head>
+<body>
+    <h1>Switch Yapısı</h1>
+
+    <p id="demo"></p>
+
+<script>
+let day = new Date().getDay(); // 0 pazar günü, 1 pazartesi, 6 cumartesi 
+let gunismi;
+console.log(day);
+switch(day){
+case 1: 
+    gunismi = 'Pazartesi';
+    break;
+case 2: 
+    gunismi = 'Salı';
+    break;
+case 3: 
+    gunismi = 'Çarşamba';
+    break;
+case 4: 
+    gunismi = 'Perşembe';
+    break;
+case 5: 
+    gunismi = 'Cuma';
+    break;
+case 5: 
+    gunismi = 'Cumartesi';
+    break;
+}
+
+document.getElementById('demo').innerHTML = 'Bugün Günlerden : '+gunismi;
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

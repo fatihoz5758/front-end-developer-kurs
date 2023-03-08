@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karşılaştırma Yapıları</title>
+</head>
+
+<body>
+
+    <h1>Karşılaştırma Yapıları</h1>
+
+<script>
+
+let num = 10;
+console.log(num);
+//== operatörü
+
+console.log( num == 20); // num 20 ye eşitmi ==>
+console.log( num == 10); // num 10 a eşitmi ==> true
+console.log( num == '10'); // num 10 a eşitmi ==> true
+//number ve string ayrımı yapmıyor
+
+//===operatörü
+console.log( num === '10'); // number ve strşn ayrımı yapıyor
+console.log( num === 10); 
+
+//!= operatörü (eşit değil operatörü)
+
+console.log( num != 5); //True döner
+console.log( num != 10); //false  döner
+
+//!== operatörü
+console.log( num !== 5); //True döner
+console.log( num !== 10); //false döner
+console.log( num !== '10'); //true döner - veri tipine de bakıyor
+
+console.log(10 == 10);
+console.log(10 === 10);
+console.log(10 === '10');
+//> operatörü
+
+console.log(num > 5); //true
+console.log(num > 15); // false
+
+console.log(num < 8 ); // false
+console.log(num < 15 ); // true
+console.log(num < 10 ); // false
+
+console.log(num <= 10 ); // true
+console.log(num >= 10 ); // true
+
+let yas = 19;
+
+// if(yas > 18) uyarı = 'içeri girebilirsin'
+
+// console.log(uyari);
+
+if (yas > 18)
+{uyari = 'içeri girebilirsin';}
+
+else
+{uyari = 'içeri giremezsin';}
+
+console.log(uyari)
+
+//&& ve operatörü
+
+console.log(num < 15 && num > 5);
+console.log( 5<= num <15 ); // true
+console.log( 5< num <15 ); //true
+console.log( num < 15 && num > 11 ); // false
+
+// or operatörü (ya da) || false || false ==> false döner , true döner
+
+console.log(num == 10 || num == 5); //ikisinden biri true dönmesi yeterli
+console.log(num > 10 || num < 15); //ikisinden biri true dönmesi yeterli
+console.log(num > 12 || num < 8); //ikisinden biri true dönmesi yeterli
+
+//! not operatörü ( boolean yapısını tersine çevirir)
+
+console.log( num == 10 );
+console.log( !(num == 10) );
+
+
+// conditional (Ternary ) Operatörü
+
+let girisizni = (yas > 18) ? 'Girebilir' : 'Giremez' 
+
+console.log(girisizni);
+
+// The Nullısh Operatör (??) // null değer atanmamış 
+
+let isim = null;
+// console.log(isim);
+
+// let korumaMetni= 'isim yok';
+
+// console.log(isim ?? korumaMetni);
+console.log(isim ?? 'İsim Alınamadı');
+let isim2
+console.log( isim2 ?? 'İsim Alınamadı')
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+
+</html>

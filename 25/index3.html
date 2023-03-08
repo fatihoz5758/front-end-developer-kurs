@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Else Yapıları</title>
+</head>
+
+<body>
+    
+    
+    
+    <h1>Js If Else</h1>
+    
+    <p id="demo"></p>
+    <script>
+        // let zaman = Date();
+        // console.log(zaman);
+
+        // console.log(saat);
+
+        let saat = new Date().getHours; //şu anki saat
+
+        // if (saat > 19) {
+        //     document.getElementById('demo').innerHTML = 'İyi akşamlar';
+        // } else {
+        //     document.getElementById('demo').innerHTML = 'İyiGeceler'
+        // }
+
+
+       
+        if ( 11 > saat > 7) {
+            document.getElementById('demo').innerHTML = 'Günaydın';
+        } else if (19 > saat >= 11){
+            document.getElementById('demo').innerHTML = 'İyi Günler'
+        }else if ( 21 > saat >= 19) {
+            document.getElementById('demo').innerHTML = 'İyi akşamlar';
+        } else if (saat >= 21){
+            document.getElementById('demo').innerHTML = 'İyiGeceler'
+        }else {document.getElementById('demo').innerHTML = 'İyiGeceler'
+    }
+        
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
