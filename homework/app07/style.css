@@ -50,8 +50,9 @@ body {
 /* header  bölümü */
 header {
     display: flex;
-    margin: 10px;
+    padding: 10px;
     justify-content: space-between;
+    background: white;
 
 }
 
@@ -66,6 +67,9 @@ header {
 .logo img {
     width: 60px;
     height: 60px;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+   
 }
 
 .logo h3 {
@@ -73,7 +77,7 @@ header {
     font-size: 25px;
     color: rgb(218, 137, 16);
     font-weight: bold;
-    text-shadow: 2px 2px 0px #444;
+    text-shadow: 0px 0px 2px black;
 }
 
 
@@ -93,7 +97,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #444;
+    color: black;
     text-decoration: none;
     font-size: 25px;
     font-weight: bold;
@@ -102,20 +106,23 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: orangered;
+    color: #da8910;
 }
 
 .ileti {
-    border: 1px solid black;
+    border: 0px solid black;
     padding: 8px 30px;
-    color: #f0e7e7;
-    background-color: rgba(4, 9, 30, 0.9);
-    box-shadow: 10px 10px 1px rgb(110, 106, 106);
+    color: #241d1d;
+    background-color: #da8910;
+    box-shadow: 10px 10px 1px rgb(95, 91, 91);
     transition: 0.8s;
+    border-radius: 10px;
 }
 
 .ileti:hover {
     box-shadow: none;
+    color: #f0e7e7;
+    transition: 0.5s;
 
 }
 

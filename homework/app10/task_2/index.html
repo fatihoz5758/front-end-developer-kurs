@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders Notu</title>
+    <style>
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        .ders {
+            text-align: center;
+
+
+        }
+
+        .not {
+
+            text-align: center;
+            width: 70%;
+            border: 0.5px solid black;
+            padding: 50px 20px 20px 20px;
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            margin: auto;
+            position: relative;
+            height: 200px;
+            border-radius: 20px;
+            background-color: lightgray;
+
+        }
+
+        input {
+            margin: 10px;
+            text-align: center;
+            border-radius: 5px;
+            padding: 10px;
+            width: 20%;
+            font-size: 20px;
+
+        }
+
+        .btn {
+            position: absolute;
+            bottom: 90px;
+            padding: 10px 40px;
+            border-radius: 5px;
+            border: 0.5px solid black;
+            font-weight: bold;
+            background-color: orange;
+            font-size: 20px;
+        }
+
+        .not_goster {
+            position: absolute;
+            bottom: 15px;
+            width: 50%;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        p {
+            text-align: center;
+            font-size: 30px;
+            color: blue;
+        }
+
+        .girilenNot {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Ders Notu</h1>
+    <div class="Ders">
+        <h2>Matematik Dersi</h2>
+        <div class="not">
+            <div class="girilenNot">
+                <label for="">Vize :</label>
+                <input type="number" id="vize">
+                <label for="">Final :</label>
+                <input type="number" id="final">
+                <label for="">Proje :</label>
+                <input type="number" id="proje">
+            </div>
+            <button onclick="hesapla()" class="btn">Hesapla</button>
+            <div class="not_goster">
+                <label for="">Notunuz :</label>
+                <input type="text" id="notunuz" style="padding: 10px;">
+            </div>
+
+        </div>
+    </div>
+
+    <p id="notGoster"></p>
+
+
+    <script>
+        var vize = document.getElementById('vize').value;
+        var final = document.getElementById('final').value;
+        var proje = document.getElementById('proje').value;
+        function hesapla() {
+            let ogrenciNotu = ((vize * 30) + (final * 50) + (proje * 20));
+
+            console.log(ogrenciNotu);
+
+//------Buradayım------
+
+
+            let text;
+            console.log(ogrenciNotu);
+            if (ogrenciNotu < 0) {
+                text = 'Hatalı giriş yaptınız';
+            } else if (ogrenciNotu < 40) {
+                text = ' Öğrenci notu : FF'
+            } else if (ogrenciNotu < 50) {
+                text = ' Öğrenci notu : DD'
+            } else if (ogrenciNotu < 70) {
+                text = ' Öğrenci notu : CC'
+            } else if (ogrenciNotu < 85) {
+                text = ' Öğrenci notu : BB'
+            } else if (ogrenciNotu <= 100) {
+                text = ' Öğrenci notu : AA'
+            } else {
+                text = 'Hatalı giriş yaptınız(En yüksek not 100)';
+            }
+            document.getElementById('notGoster').innerHTML = text;
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

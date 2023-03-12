@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For döngüsü çalışması</title>
+</head>
+<body>
+    <h1>For döngüsü çalışması</h1>
+    
+    <input type="text" id="metin"> 
+    <button onclick="writeToScreen()">kelimeyi yazdır</button>
+
+    <p id="demo"></p>
+
+<Script>
+
+
+
+function writeToScreen(){
+
+let text = '';
+let metin= document.getElementById('metin').value;
+// console.log(metin);
+// for (let i =0; i <10; i++){
+
+//     text += metin +'<hr>'; 
+
+//     // text += i + 1 + '-' + metin +'<br>';
+// }
+
+
+//  document.getElementById('demo').innerHTML = text;
+// }
+
+// for (let i =1; i <7; i++){
+
+//     text += '<h' + i +'>'+ metin + '</h' + i + '>'
+  
+  
+// }
+
+
+//  document.getElementById('demo').innerHTML = text;
+ 
+
+// for (let i = 6;   0 < i ; i--){
+
+//     text += '<h' + i +'>'+ metin + '</h' + i + '>'
+  
+  
+// }
+
+
+//  document.getElementById('demo').innerHTML = text;
+
+// for (let i = 20;   i < 30 ; i++){
+
+//     text += '<span style="font-size:' + i + 'px;">' + metin +'</span><br>' 
+    
+// }
+// for (let i = 0;   i < 10 ; i++){
+
+//     text += '<span style="font-size:' +(i + 20) + 'px;">' + metin +'</span><br>' 
+    
+// }
+for (let i = 3 ;   i < 10 ; i++){
+
+    text += '<span style="font-size:' +(i * 4) + 'px;">' + metin +'</span><br>' 
+    
+}
+
+
+ document.getElementById('demo').innerHTML = text;
+
+}
+
+
+
+
+
+
+
+
+
+   
+</Script>
+
+
+
+
+
+
+
+</body>
+</html>

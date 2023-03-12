@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For loops</title>
+</head>
+<body>
+    <h1>for in örneği</h1>
+<p id="demo"></p>
+<p id="demo1"></p>
+
+    <script>
+
+const sayilar =[1 ,2, 50, 5, 4, 35 ];
+
+
+        // for (let i=0 ; i < sayilar.length; i++){
+        //     console.log(sayilar[i]);
+        // }
+let text = '';
+
+for ( index in sayilar ){
+    console.log(sayilar[index]);
+    text += sayilar[index] + '<br>'
+}
+
+const adres = { il: 'Ankara', ilce: 'Çankaya', mahalle: 'Yenimahalle'};
+
+let text1= '';
+for ( key in adres ){
+    console.log(adres[key]);
+    // console.log(key);
+    // text1 += adres[key] + '<br>'
+    text1 += key + ' :' + adres[key] + '<br>'
+}
+
+
+document.getElementById('demo').innerHTML = text;
+document.getElementById('demo1').innerHTML = text1;
+
+    </script>
+
+
+</body>
+</html>

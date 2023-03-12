@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Methods</title>
+    <style>
+        p{
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+    <h1>Date() objesi Metodları</h1>
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo4"></p>
+<p id="demo3"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+
+
+
+
+<script>
+
+let date = Date();
+
+console.log(date);
+console.log(typeof date);
+
+//---------------
+let date2 = new Date( '1982-01-02');
+console.log (date2);
+console.log (typeof date2);
+
+let date3 = new Date(2020,0,21,05,30,20 ); // ocak 0 dan başlıyor (yıl,ay,gün,saat,dakika,saniye)
+console.log(date3);
+
+//---------------
+let date4 = new Date();
+
+
+
+let aylar = ['ocak','şubat','mart','nisan','mayıs','haziran','temmuz','ağustos','eylül','ekim','kasım','aralık'];
+
+let gunler = [ 'pazar','pazartesi','salı','çarşamba','perşembe','cuma','cumartesi'];
+
+
+
+
+
+
+
+
+document.getElementById('demo').innerHTML = date2;
+document.getElementById('demo2').innerHTML = date4.getFullYear();
+// document.getElementById('demo2').innerHTML = date4.getyear();
+document.getElementById('demo4').innerHTML = aylar[ date4.getMonth()];
+document.getElementById('demo3').innerHTML = date4.getDate() + 'Bugün';
+document.getElementById('demo5').innerHTML = date4.getDay() + 'Bugün'; // gün olarak 0 pazar olarak başlar 
+document.getElementById('demo6').innerHTML = gunler[date4.getDay()]; 
+</script>
+
+</body>
+</html>

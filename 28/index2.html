@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Sets</title>
+</head>
+
+<body>
+    <h1>Javascript Set yapıları</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <hr>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+
+
+    <script>
+
+        let harfler = ['a', 'b', 'c', 'ç', 'd', 'e', 'a', 'a', 'b'];
+
+        console.log(harfler);
+
+
+        document.getElementById('demo').innerHTML = harfler;
+
+        let letters = new Set(['a', 'b', 'c']);
+
+        document.getElementById('demo1').innerHTML = letters;
+        document.getElementById('demo1').innerHTML = letters.size;
+
+        letters.add('d');
+        document.getElementById('demo1').innerHTML = letters.size;
+        letters.add('a');
+        document.getElementById('demo1').innerHTML = letters.size;
+
+        let letters2 = new Set(harfler); //ay elemanları almıyor
+
+        document.getElementById('demo2').innerHTML = letters2.size;
+
+        let text = '';
+        let text1 = '';
+
+
+        harfler.forEach(function (value) {
+            text += value + '<br>';
+        })
+        
+        letters2.forEach(function (value) {
+            text1 += value + '<br>';
+        })
+        
+        document.getElementById('demo3').innerHTML = text;
+        document.getElementById('demo4').innerHTML = text1;
+        document.getElementById('demo5').innerHTML = letters2[0]; //set te index seçimi yapamıyourz
+
+
+
+    </script>
+
+
+</body>
+
+</html>

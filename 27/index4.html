@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js For loops</title>
+</head>
+<body>
+    <h1> for of örneği</h1>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+        const sayilar = [ 1, 2, 50, 5, 4, 35 ];
+        // for ( let i = 0; i < sayilar.length; i++){
+        //     console.log(sayilar[i]);
+        // }
+        let text = '';
+        let text1 = '';
+        for ( element of sayilar  ){
+            console.log(element);
+            text += element + '<br>'
+        }
+        let str = 'Merhaba Dünya';
+        for ( harf of str ){
+            console.log(harf);
+            text1 += harf + '<br>'
+        }
+
+
+        document.getElementById('demo').innerHTML = text;
+        document.getElementById('demo1').innerHTML = text1;
+       
+
+    </script>
+    
+</body>
+</html>
