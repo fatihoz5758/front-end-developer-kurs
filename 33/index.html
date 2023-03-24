@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation">
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<title>ToDo App Pure HTML CSS JS</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Lato', sans-serif;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #center {
+        width: 80%;
+        max-width: 600px;
+        bottom: 0 5px 15px rgba(1,0,0, 0.1);
+    }
+
+    .header {
+        background-color: #D5B4B4;
+        padding: 30px 40px;
+        color: #fff;
+        text-align: center;
+        border-radius: 20px 20px 0 0;
+    }
+
+    input {
+        margin: 0;
+        border: none;
+        border-radius: 5px 0px 0px 5px;
+        width: 65%;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .addBtn {
+        padding: 10px;
+        width: 45%;
+        background-color: #ddd;
+        color: #555;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 16px;
+        /* display: inline-block ; */
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    ul li {
+        background-color: #F5EBEB;
+        cursor: pointer;
+        padding: 12px 8px 12px 40px;
+        font-size: 18px;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    ul li:nth-child(even) {
+        background-color: #f5d5d5;
+    }
+
+    ul li:hover {
+        background-color: #ddd;
+    }
+
+    ul li.checked {
+        background-color: #e2e1e1;
+        color: grey;
+        text-decoration: line-through;
+    }
+
+    ul li.checked::before {
+        content: '';
+        position: absolute;
+        border-color: red;
+        border-style: solid;
+        border-width: 0 2px 2px 0;
+        top: 10px;
+        left: 16px;
+        height: 15px;
+        width: 7px;
+        transform: rotate(45deg);
+    }
+
+    .close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 12px 16px;
+    }
+
+    .close:hover {
+        background-color: #F5EBEB;
+        color: #555;
+    }
+</style>
+
+<body>
+
+   
+    <div id="center">
+        <div id="inputDiv" class="header">
+            <h2>My TODO List</h2>
+            <input type="text" id="myInput" placeholder="write todo title">
+            <span onclick="addTodo()" class="addBtn"> Add Todo </span>
+        </div>
+
+        <ul id="myList">
+            <!-- <li> Read some book  <span class="close">x</span> </li> -->
+            <li> Read some book </li>
+            <li> Run </li>
+            <li class="checked"> Learn Html </li>
+            <li> Go to market </li>
+            <li> Have some fun </li>
+        </ul>
+    </div>
+
+    <script>
+        //her liste elemanına kapama tuşu ekliyoruz
+        var liList = document.getElementsByTagName('li');
+        // console.log(liList);
+        for (let i = 0; i < liList.length; i++) {
+            // console.log(liList[i]);
+            var span = document.createElement('span');
+            // var textNode = document.createTextNode('x');
+            var textNode = document.createTextNode('\u00D7');
+            span.className = 'close';
+            span.appendChild(textNode);
+            liList[i].appendChild(span);
+        }
+
+        //kapatma tuşuna basınca li elemanı kaybolsun
+        var close = document.getElementsByClassName('close');
+        for (let i = 0; i < close.length; i++) {
+            close[i].onclick = function () {
+                var div = this.parentElement;
+                div.style.display = 'none';
+                // div.style.visibility = 'hidden';
+            }
+        }
+
+        // li elementinin sınıfını checked sınıf yapma(üstüne tıklandığında)
+        var ulList = document.querySelector('ul');
+        ulList.addEventListener('click', function (event) {
+
+            if (event.target.tagName === 'LI') {
+                // console.log('selam')
+                event.target.classList.toggle('checked');
+            }
+        })
+
+        //yeni todo ekleme
+        function addTodo() {
+            let inputText = document.getElementById('myInput').value;
+            // console.log(inputText);
+            let li = document.createElement('li');
+            let textNode = document.createTextNode(inputText);
+            li.appendChild(textNode);
+
+            if(inputText === ''){
+                alert('You should writte some text')
+            }else{
+                document.getElementById('myList').appendChild(li);
+            }
+            var span = document.createElement('span');
+            var textNode2 = document.createTextNode('\u00D7');
+            span.className = 'close';
+            span.appendChild(textNode2);
+            li.appendChild(span);
+
+            for (let i = 0; i < close.length; i++) {
+            close[i].onclick = function () {
+                var div = this.parentElement;
+                div.style.display = 'none';
+                // div.style.visibility = 'hidden';
+            }
+            document.getElementById('myInput').value = '';
+        }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

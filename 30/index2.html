@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İnput hataları</title>
+    <style>
+        #demo {
+            color: red;
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>js try -catch</h1>
+
+    <h5>1-100 arası bir sayı giriniz </h5>
+    <input type="text" id="sayi">
+    <button type="button" onclick="kontrolEt()">Sayıyı Test Et</button>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <script>
+        // console.log(isNaN(5));
+        // console.log(isNaN(-5));
+        // console.log(isNaN(a));
+        // console.log(isNaN('x'));
+        function kontrolEt() {
+            let sayi = document.getElementById('sayi').value;
+            console.log(sayi);
+            // sayi = Number(sayi);
+            // console.log(sayi);
+            // console.log(isNaN(sayi));
+            try {
+                if (sayi == '') throw 'Boş değer girilemez';  //if deki değer hatalı ise (throw) bu ifadeyi fırlat ilet demek istiyor.
+                if (isNaN(sayi)) throw 'Lütfen sadece sayı giriniz';
+                sayi = Number(sayi);
+                if (sayi <= 1) throw '1 den küçük değer girilemez'
+                if (sayi >= 100) throw '100 den büyük değer girilemez'
+            } catch (err) {
+                console.log(err);
+                document.getElementById('demo').innerHTML = err;
+            }
+            finally {
+                document.getElementById('demo2').innerHTML = 'Fianlly değeri ekrana yazıldı';
+
+            }
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

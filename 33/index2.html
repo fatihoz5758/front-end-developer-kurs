@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daktilo Yazısı</title>
+</head>
+<body>
+    <h1>Daktilo(JS)</h1>
+    <input type="text" id="textToWrite">
+    <button onclick="typeWriter()"> Kutuya birşeyler yazın </button>
+    <p id="demo" ></p>
+
+    <script>
+
+        let speed = 80;
+        let i = 0;
+
+        function typeWriter(){
+            txt = document.getElementById('textToWrite').value;
+
+            if ( i<txt.length ){
+                document.getElementById('demo').innerHTML += txt.charAt(i);
+                i++;
+                setTimeout( typeWriter, speed );
+            }
+        }
+
+    </script>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js NEsneleri</title>
+</head>
+
+<body>
+    <h1>Js Objects</h1>
+    <p id="demo"></p>
+
+    <script>
+
+        // let hasta = {
+        //     isim: 'Ahmet',
+        //     soyisim: 'Akcan',
+        //     yas: 40,
+        // }; //object literal
+
+        const araba = {};
+        araba.marka = 'Reanult';
+        araba.model = 2020;
+        araba.klasman = 'B sınıfı';
+
+        console.log(araba.model);
+        console.log(araba.marka);
+
+        let bilgisayar = new Object();
+        bilgisayar.marka = 'apple';
+        bilgisayar.model = 'MacBook Air';
+        bilgisayar.yil = 2020;
+        console.log(bilgisayar.marka);
+        console.log(bilgisayar.model);
+
+        let text = 'Merhaba arkadaşlar';
+        console.log(text[3]);
+        text[3] = 't';
+        console.log(text); // strşnglr immıtable - değiştiremiyoruz
+
+        let arr = [5, 90, 'ali', true, 'istanbul', 14];
+        console.log(arr);
+        console.log(arr[2]);
+        arr[2] = 'ayşe';
+        console.log(arr);
+
+        let hasta = {
+            isim: 'Ahmet',
+            soyisim: 'Akcan',
+            yas: 40,
+        }; //object literal
+
+        console.log(hasta.isim);
+        hasta.isim = 'Kezban';
+        hasta.soyisim = 'Ün';
+        
+        console.log(hasta.isim);
+        console.log(hasta.soyisim);
+
+        const a = hasta;
+        console.log(a.isim);
+        a.isim = 'Emine';
+        console.log(a.isim);
+        console.log(hasta.isim);
+</script>
+</body>
+</html>

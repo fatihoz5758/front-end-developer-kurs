@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM events</title>
+<style>
+    div{
+        width: 100px;
+        height: 100px;
+        background-color: lightcoral;
+        text-align: center;
+        line-height: 100px;
+        cursor: pointer;
+        margin: 10px;
+        
+    }
+</style>
+</head>
+<body>
+    
+<div onclick="this.innerHTML = 'Merhaba'">Tıkla</div>
+<div onclick="tarihYaz()">Tıkla</div>
+
+<p id="demo">1</p>
+<p id="demo">2</p>
+<p id="demo">3</p>
+<p id="demo">4</p>
+
+<div onmouseover="this.innerHTML = 'Üstünde '" onmouseout="this.innerHTML= 'ayrıldı'">Fare </div>
+<div id="mouseOut" onmouseover='mouseOver()' onmouseout='mouseOut()'>Fare </div>
+<div id="mouseOut" onmouseover="this.innerHTML = 'çekildi' " onmouseout="this.innerHTML = 'tıklandı'">Fare </div>
+
+
+<script>
+    function tarihYaz(){
+let date = Date();
+let pList = document.getElementsByTagName('p');
+pList[0].innerHTML = date;
+let cookieBilgisi = navigator.cookieEnabled;
+pList[1].innerHTML = cookieBilgisi;
+
+
+    }
+
+function mouseOver() {
+    
+    document.getElementById('mouseOut').innerHTML = 'üstünde';
+}
+function mouseOut(){
+document.getElementById('mouseOut').innerHTML = 'ayrıldı';
+}
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

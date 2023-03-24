@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Nodes</title>
+</head>
+
+<body>
+
+    <h1>Js Düğümleri</h1>
+
+    <div id="div">
+        <p id="p1">parargaf 1</p>
+        <p id="p2">parargaf 2</p>
+        <p id="p1">parargaf 1</p>
+        <p id="p2">parargaf 2</p>
+        <p id="p1">parargaf 1</p>
+        <p id="p2">parargaf 2</p>
+        <p id="p1">parargaf 1</p>
+        <p id="p2">parargaf 2</p>
+        <p id="p1">parargaf 1</p>
+        <p id="p2">parargaf 2</p>
+        <p id="p1">parargaf 1</p>
+        <p id="p2">parargaf 2</p>
+    </div>
+
+
+    <script>
+        // nodes düğümler,
+        let yeniNode = document.createTextNode('yeni Paragraf buraya eklendi');
+        let yeniParagaf = document.createElement('p');
+        yeniParagaf.appendChild(yeniNode);
+
+        let divcontainer = document.getElementById('div');
+        let p2Element = document.getElementById('p2');
+        divcontainer.insertBefore(yeniParagaf, p2Element);
+
+        // let p1Element = document.getElementById('p1');
+        // p1Element.remove(); // p1 şd elementi sildik
+
+        // document.getElementById('p1').remove();
+
+        //    divcontainer.removeChild(p1Element);
+        // divcontainer.replaceChild( p2Element, p1Element);
+
+        const nodeList = document.querySelectorAll('p');
+        console.log(nodeList);
+        console.log(nodeList[0].innerHTML);
+        console.log(nodeList.length);
+
+        for (let i = 0; i < nodeList.length; i++) {
+            if (i % 2 == 0) {
+                nodeList[i].style.color = 'red';
+            } else {
+                nodeList[i].style.fontSize = '30px';
+            }
+        }
+
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

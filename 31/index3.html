@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM eventsListener</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+            text-align: center;
+            line-height: 100px;
+            cursor: pointer;
+            margin: 10px;
+            
+        }
+    </style>
+    </head>
+    <body>
+        <div id="mouseClick">Tıkla</div>
+
+    <p id="demo1">1</p>
+    <p id="demo2">2</p>
+    <p id="demo3">3</p>
+    <p id="demo4">4</p>
+    <button onclick="addEventListenerSil()">Rastgele sayı üretmeyi bırak</button>
+
+
+<script>
+
+document.getElementById('mouseClick').addEventListener('click' , tarihYaz4)
+document.getElementById('mouseClick').addEventListener('click' , tarihYaz)
+document.getElementById('mouseClick').addEventListener('mouseover' , tarihYaz2)
+document.getElementById('mouseClick').addEventListener('mouseout' , tarihYaz3)
+
+function tarihYaz(){
+    document.getElementById('demo1').innerHTML = Date();
+}
+function tarihYaz2(){
+    document.getElementById('demo2').innerHTML = Date();
+}
+function tarihYaz3(){
+    document.getElementById('demo3').innerHTML = Date();
+}
+function tarihYaz4(){
+    alert(Date());
+}
+
+
+window.addEventListener( 'resize' , sayiYazdir)
+
+function sayiYazdir(){
+    let rasgeleSayi = Math.floor(Math.random()*100);
+    document.getElementById('demo4').innerHTML = rasgeleSayi;
+    
+}
+
+function addEventListenerSil(){
+    window.removeEventListener('resize', sayiYazdir);
+}
+
+
+</script>
+
+
+
+</body>
+</html>

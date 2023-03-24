@@ -1,0 +1,24 @@
+ <div onmouseover="this.innerHTML = 'üstünde'" onmouseout="this.innerHTML = 'ayrıldı'"> 
+        Fare </div>
+    <div id="mouseOut" onmouseover="mouseOver()" onmouseout="mouseOut()"> Fare </div>
+    <div onmouseup="this.innerHTML = 'çekildi'" onmousedown="this.innerHTML = 'tıklandı'"> 
+            Fare </div>
+
+    <script>
+        function tarihYaz() {
+            let date = Date();
+            let pList = document.getElementsByTagName('p');
+            pList[0].innerHTML = date;
+            let cookieBilgisi = navigator.cookieEnabled;
+            pList[1].innerHTML = cookieBilgisi;
+        }
+
+        function mouseOver() {
+            document.getElementById('mouseOut').innerHTML = 'üstünde';
+        }
+        function mouseOut() {
+            document.getElementById('mouseOut').innerHTML = 'ayrıldı';
+        }
+
+
+    </script>

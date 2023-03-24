@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <h1>JSON Parse </h1>
+    <p id="demo"></p>
+<script>
+
+let jsonText = '{"name":"John", "age":30, "city":"New York"}';
+
+let objectPerson = JSON.parse(jsonText);
+
+let car = { marka : 'Peugeot', model : '3008', yil: 2020};
+
+let stringCar =JSON.stringify(car);
+
+
+// document.getElementById('demo').innerHTML = objectPerson.city;
+// document.getElementById('demo').innerHTML = stringCar.model;
+document.getElementById('demo').innerHTML = stringCar;
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+
+    <style>
+        .red{
+        color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Document Object Model</h1>
+
+<p>Lorem ipsum dolor sit amet.</p>
+<p>Lorem ipsum dolor sit amet.lorem iosun</p>
+<p class="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. p3</p>
+<p class="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit.p4 </p>
+
+    <p id="demo0"></p>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <img src="elma.jpg"  alt="elma" width="200px">
+    <button onclick="changeImg()">1. resmi değiştir</button>
+    <button onclick="changeImg2()">2. resmi değiştir</button>
+
+<script>
+
+let text0= 'Merhaba';
+
+document.getElementById('demo0').innerHTML = text0;
+
+let elements = document.getElementsByTagName('p');
+console.log(elements[0]);
+console.log(elements[1]);
+console.log(elements[2].innerHTML);
+// console.log(elements[4].innerHTML); hata geliyot
+
+
+
+let text= 'Merhaba';
+
+document.getElementById('demo').innerHTML = text + elements[0].innerHTML;
+
+let redlist = document.getElementsByClassName('red');
+console.log(redlist[0]);
+console.log(redlist[1]);
+
+document.getElementById('demo2').innerHTML= redlist[0].innerHTML;
+
+let redlist2 = document.querySelectorAll('p.red');
+
+console.log(redlist2[0]);
+
+let allBody = document.body;
+
+// console.log(allBody)
+// console.log(allBody.innerHTML)
+
+let imgs = document.images;
+console.log(imgs[0]);
+
+function changeImg(){
+    imgs[0].src = "roma.gif"
+}
+function changeImg2(){
+    imgs[0].src = "elma.jpg"
+}
+
+
+
+</script>
+
+
+</body>
+</html>

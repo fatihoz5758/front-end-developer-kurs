@@ -1,0 +1,47 @@
+---------------------------------------
+Tik işareti
+        content: '';
+        position: absolute;
+        border-color: red ;
+        border-style: solid;
+        border-width: 0 2px 2px 0;
+        top: 10px;
+        left: 16px;
+        height: 15px;
+        width: 7px;
+        transform: rotate(45deg);
+
+----------------------------------------------
+
+yıldızın karşılığı \u00D7
+
+<input type="text" maxlength="5"> sınırlandırma
+
+animasyo
+  #snackbar.show {
+            visibility: visible;
+            animation: fadein 0.5s fadeout 0.5s 1.3s;
+        }
+
+        @keyframes fadein {
+            from {
+                bottom: 0;
+                opacity: 0;
+            }
+
+            to {
+                bottom: 30px;
+                opacity: 1;
+            }
+        }
+        @keyframes fadein {
+            from {
+                bottom: 30;
+                opacity: 1;
+            }
+
+            to {
+                bottom: 0;
+                opacity: 0;
+            }
+            }

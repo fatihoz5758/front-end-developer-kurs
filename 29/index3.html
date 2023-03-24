@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Nesneler</title>
+</head>
+
+<body>
+
+    <h1>Js objects</h1>
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+
+
+    <script>
+
+        let hasta = {
+            isim: 'Ahmet',
+            soyisim: 'Akcan',
+            yas: 40
+        };
+
+        console.log(hasta.isim);
+        hasta.yas = 10;
+        hasta.tenRengi = 'kumral';
+
+        document.getElementById('demo').innerHTML =
+            hasta.isim + ' isimli hasta ' + hasta.yas + ' yaşında ve '
+            + hasta.tenRengi + ' ten rengine sahiptir.'
+
+        document.getElementById('demo2').innerHTML =
+            hasta['isim'] + ' isimli hasta ' + hasta['yas'] + ' yaşında ve '
+            + hasta['tenRengi'] + ' ten rengine sahiptir. '
+
+        console.log(hasta['isim']);
+        hasta.memleket = 'Adana';
+        console.log(hasta['memleket']);
+
+        delete hasta.yas;
+        console.log(hasta['yas']);
+
+        let text = '';
+
+        for (let x in hasta) {
+            // console.log(x);
+            console.log(hasta[x]);
+            text += hasta[x] + '<br>'
+        }
+
+        document.getElementById('demo3').innerHTML = text;
+
+        let ahmet = hasta;
+
+        ahmet.hastaliklar = { diyabet: true, kolesterol: true, tansiyon: false };
+
+        // let ahmet = {
+        //     isim : 'Ahmet',
+        //     soyisim : 'Akcan',
+        //     memleket : 'adana',
+        //     tenRengi : 'kumral',
+        //     hastaliklar : { diyabet : true, kolesterol : true, tansiyon : false }
+        // };
+
+        document.getElementById('demo4').innerHTML = ahmet.hastaliklar.diyabet;
+        document.getElementById('demo5').innerHTML = ahmet.hastaliklar['tansiyon'];
+
+        ahmet.hastaliklar = [
+            { title: 'diyabet', deger: true, ilaclar: ['asprin', 'x', 'y', 'z'] },
+            { title: 'kolesterol', deger: true, ilaclar: ['a', 'b', 'c'] },
+            { title: 'tansiyon', deger: false, ilaclar: null },
+        ]
+
+        // let ahmet = {
+        //     isim : 'Ahmet',
+        //     soyisim : 'Akcan',
+        //     memleket : 'adana',
+        //     tenRengi : 'kumral',
+        //     hastaliklar : [
+        //     {title : 'diyabet', deger : true, ilaclar : ['asprin', 'x', 'y', 'z' ]},
+        //     {title : 'kolesterol', deger : true, ilaclar : ['a', 'b', 'c' ]},
+        //     {title : 'tansiyon', deger : false, ilaclar : null },
+        // ]
+        // };
+
+        let text2 = '';
+
+
+        for (let i in ahmet.hastaliklar) {
+            console.log('i : ' + i);
+            text2 += '<h2>' + ahmet.hastaliklar[i].title + '</h2>'
+            for (let j in ahmet.hastaliklar[i].ilaclar) {
+                console.log('j : ' + j);
+                text2 += ahmet.hastaliklar[i].ilaclar[j] + '<br>';
+            }
+        }
+
+        document.getElementById('demo6').innerHTML = text2;
+        // document.getElementById('demo7').innerHTML = ahmet;
+        document.getElementById('demo7').innerHTML = ahmet;
+        document.getElementById('demo7').innerHTML = JSON.stringify(ahmet);
+        console.log(JSON.stringify(ahmet));
+        // document.getElementById('demo8').innerHTML = JSON.stringify(ahmet.hastaliklar);
+        document.getElementById('demo8').innerHTML = ahmet.hastaliklar[0].ilaclar;
+        document.getElementById('demo8').innerHTML = JSON.stringify(ahmet.hastaliklar[0].ilaclar);
+
+
+
+    </script>
+
+</body>
+
+</html>

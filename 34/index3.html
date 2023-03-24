@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnackBar</title>
+    <style>
+        #snackbar {
+            visibility: hidden;
+            min-width: 200px;
+            position: fixed;
+            left: 50%;
+            margin-left: -125px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding: 15px;
+            z-index: 1;
+            bottom: 30px;
+        }
+
+        #snackbar.show {
+            visibility: visible;
+            animation: fadein 0.5s fadeout 0.5s 1.3s;
+        }
+
+        @keyframes fadein {
+            from {
+                bottom: 0;
+                opacity: 0;
+            }
+
+            to {
+                bottom: 30px;
+                opacity: 1;
+            }
+        }
+        @keyframes fadein {
+            from {
+                bottom: 30;
+                opacity: 1;
+            }
+
+            to {
+                bottom: 0;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <button onclick="showSnack()">Show Snackbar</button>
+
+    <div id="snackbar">SnackBar text is here</div>
+
+    <script>
+        function showSnack() {
+            let snackContainer = document.getElementById('snackbar');
+
+            snackContainer.className = 'show';
+
+            setTimeout(function () { snackContainer.className = snackContainer.className.replace('show', '') }, 2000)
+        }
+    </script>
+
+
+</body>
+
+</html>

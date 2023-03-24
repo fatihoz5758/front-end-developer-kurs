@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Not Hesaplama</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Vize</label>
+            <input type="number" class="form-control" id="vize" aria-describedby="emailHelp">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Final</label>
+            <input type="number" class="form-control" id="final">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Proje</label>
+            <input type="number" class="form-control" id="proje">
+        </div>
+
+        <button type="button" class="btn btn-primary" onclick="hesapla()">Notu Hesapla</button>
+
+        <p id="demo"></p>
+        
+    </form>
+
+
+    <script>
+        let vize, final, proje, ortalama, harfNot;
+
+        function hesapla() {
+            vize = document.getElementById('vize').value;
+            final = document.getElementById('final').value;
+            proje = document.getElementById('proje').value;
+            console.log(vize, final, proje);
+
+            ortalama = (0.3 * vize) + (0.5 * final) + (0.2 * proje);
+
+            if (ortalama >= 85) {
+                harfNot = 'AA';
+                document.getElementById('demo').innerHTML =
+                    '<hr class="border border-danger border-2 opacity-50">' +
+                    '<h2>Ortalama :' + ortalama + '<span class="badge bg-success">' + harfNot + '</span></h2>'
+            } else if (ortalama >= 70) {
+                harfNot = 'BB';
+                document.getElementById('demo').innerHTML =
+                    '<hr class="border border-danger border-2 opacity-50">' +
+                    '<h2>Ortalama :' + ortalama + '<span class="badge bg-info">' + harfNot + '</span></h2>'
+            } else if (ortalama >= 50) {
+                harfNot = 'CC';
+                document.getElementById('demo').innerHTML =
+                    '<hr class="border border-danger border-2 opacity-50">' +
+                    '<h2>Ortalama :' + ortalama + '<span class="badge bg-warning">' + harfNot + '</span></h2>'
+            }
+            else if (ortalama >= 40) {
+                harfNot = 'DD';
+                document.getElementById('demo').innerHTML =
+                    '<hr class="border border-danger border-2 opacity-50">' +
+                    '<h2>Ortalama :' + ortalama + '<span class="badge bg-dark">' + harfNot + '</span></h2>'
+            }
+            else if (ortalama) {
+                harfNot = 'FF';
+                document.getElementById('demo').innerHTML =
+                    '<hr class="border border-danger border-2 opacity-50">' +
+                    '<h2>Ortalama :' + ortalama + '<span class="badge bg-light">' + harfNot + '</span></h2>'
+            }
+
+        }
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

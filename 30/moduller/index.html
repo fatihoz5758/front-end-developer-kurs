@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modüller</title>
+</head>
+<body>
+    <h1>Js te Modül yapıları</h1>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+
+<script type="module">
+
+import address from './address.js';
+import { name , age, diller} from './person.js';
+import job from './job.js';
+
+document.getElementById('demo1').innerHTML = address();
+document.getElementById('demo2').innerHTML = job();
+document.getElementById('demo3').innerHTML = 
+'Adım' + name + ', yaşım' + age + '.';
+
+let text = '<h2> Bildiğim Yazılım Dilleri: </h2>';
+
+for(let dil in diller){
+    console.log(dil);
+    text += diller[dil] + '<br>';
+}
+document.getElementById('demo4').innerHTML = text;
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

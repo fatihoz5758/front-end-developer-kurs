@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Classes</title>
+</head>
+
+<body>
+    <h1>class yapıları</h1>
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <script>
+
+        let contact = {
+            name: 'Gökhan',
+            phone: {
+                cellPhone: ['5556665056', '53254546555', '56545456645'],
+                homePhnone: '222225465065'
+            },
+            address: 'Ankara Yenimahalle',
+            age: 40,
+        };
+
+        console.log(contact.name);
+        console.log(contact.phone.homePhnone);
+        console.log(contact.phone.cellPhone);
+        console.log(contact['phone']['cellPhone'][1]);
+
+        class Araba {
+            constructor(marka, type, model) {
+                this.marka = marka;
+                this.type = type;
+                this.model = model;
+                console.log('constructor fonksiyon çalıştı ' + marka);
+            }
+            yas(){
+                let date = new Date();
+                return date.getFullYear()- this.model;
+            }
+        }
+        let arabam1 = new Araba('Renault', 'Megan', 2005);
+        let arabam2 = new Araba('Peugeot', '3008', 2020);
+        let arabam3 = new Araba('Porsche', 'Cayene', 2023);
+
+        document.getElementById('demo').innerHTML =
+            ' Benim En sevdiğim arabam '  + arabam3.model + ' model olan ' + arabam3.marka;
+        document.getElementById('demo2').innerHTML =
+            ' Benim '  + arabam2.marka + ' markalı arabam ' + arabam2.yas() + ' yaşında ';
+
+    </script>
+
+</body>
+
+</html>
